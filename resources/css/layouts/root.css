@@ -1,0 +1,58 @@
+
+:root {
+    --color-mode: #000;
+    --color-mode-light: rgba(204, 204, 204, 0.1);
+}
+
+[data-color="red"] {
+    --color-mode: #fe0000;
+    --color-mode-light: rgb(254, 0, 0, 0.1);
+}
+
+[data-color="blue"] {
+    --color-mode: #4299e1;
+    --color-mode-light: rgba(191, 219, 254, 0.1);
+}
+
+[data-color="yellow"] {
+    --color-mode: #ecc94b;
+    --color-mode-light: rgba(253, 230, 138, 0.2);
+}
+
+[data-color="green"] {
+    --color-mode: #48bb78;
+    --color-mode-light: rgba(167, 243, 208, 0.1);
+}
+
+[data-color="pink"] {
+    --color-mode: #FF5E94;
+    --color-mode-light: rgb(255, 94, 148, 0.1);
+}
+[data-color="orange"] {
+    --color-mode: #FA5B0F;
+    --color-mode-light: rgb(250, 91, 15, 0.1);
+}
+[data-color="purple"] {
+    --color-mode: #9200EE;
+    --color-mode-light: rgb(146, 0, 238, 0.1);
+}
+[data-color="sky"] {
+    --color-mode: #00D4BD;
+    --color-mode-light: rgb(0, 212, 189, 0.1);
+}
+[data-color="cadetBlue"] {
+    --color-mode: #5E9E9F;
+    --color-mode-light: rgb(94, 158, 159, 0.1);
+}
+[data-color="crimson"] {
+    --color-mode: #E54B4B;
+    --color-mode-light: rgb(229, 75, 75, 0.1);
+}
+[data-color="olive"] {
+    --color-mode: #666D41;
+    --color-mode-light: rgb(102, 109, 65, 0.1);
+}
+[data-color="brown"] {
+    --color-mode: #FF9800;
+    --color-mode-light: rgb(255, 152, 0, 0.1);
+}

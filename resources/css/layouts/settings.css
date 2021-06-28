@@ -1,0 +1,152 @@
+
+.settings-wr {
+    position: fixed;
+    z-index: 50;
+    right: -200px;
+    top: 20%;
+    transition: right .5s ease;
+}
+.settings-wr.opened {
+    right: 0;
+}
+
+/* icon */
+.settings-wr .icon .settings-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    padding: 10px 10px;
+    background-color: #000;
+}
+.settings-wr .icon .settings-btn svg {
+    pointer-events: none;
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    animation: rotate-anim 2s infinite linear;
+    -webkit-animation: rotate-anim 2s infinite linear;
+}
+
+@keyframes rotate-anim {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/* content */
+.settings-wr .settings-content {
+    background-color: #000;
+    padding: 40px 30px;
+    width: 200px;
+}
+.settings-wr .settings-content .title {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 2px;
+    border-bottom: 1px solid rgb(82, 82, 82);
+    display: inline-block;
+}
+
+.settings-wr .settings-content .colors {
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+.settings-wr .settings-content .colors li {
+    display: inline-block;
+}
+.settings-wr .settings-content .colors li a {
+    text-decoration: none;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+.settings-wr .settings-content .colors li a.blue {
+    background-color: #4299e1;
+}
+.settings-wr .settings-content .colors li a.green {
+    background-color: #66B95C;
+}
+.settings-wr .settings-content .colors li a.pink {
+    background-color: #FF5E94;
+}
+.settings-wr .settings-content .colors li a.orange {
+    background-color: #FA5B0F;
+}
+.settings-wr .settings-content .colors li a.black {
+    background-color: #333333;
+}
+.settings-wr .settings-content .colors li a.purple {
+    background-color: #9200EE;
+}
+.settings-wr .settings-content .colors li a.sky {
+    background-color: #00D4BD;
+}
+.settings-wr .settings-content .colors li a.cadetBlue {
+    background-color: #5E9E9F;
+}
+.settings-wr .settings-content .colors li a.crimson {
+    background-color: #E54B4B;
+}
+.settings-wr .settings-content .colors li a.olive {
+    background-color: #666D41;
+}
+.settings-wr .settings-content .colors li a.red {
+    background-color: #FE0000;
+}
+.settings-wr .settings-content .colors li a.brown {
+    background-color: #FF9800;
+}
+.settings-wr .settings-content .colors li a.yellow {
+    background-color: #ecc94b;
+}
+
+
+.settings-wr .settings-content .cursor {
+    padding-top: 20px;
+    display: flex;
+}
+.settings-wr .settings-content .cursor a.magic-cursor-btn {
+    position: relative;
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    border: 2px solid rgb(128, 128, 128);
+}
+.settings-wr .settings-content .cursor a.magic-cursor-btn::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background-color: rgb(128, 128, 128);
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.settings-wr .settings-content .cursor a.magic-cursor-btn.active {
+    border: 2px solid rgb(255, 255, 255);
+}
+.settings-wr .settings-content .cursor a.magic-cursor-btn.active::after {
+    background-color: rgb(255, 255, 255);
+}
+
+.settings-wr .settings-content .cursor a.def-cursor-btn svg {
+    width: 30px;
+    height: 30px;
+    color: rgb(128, 128, 128);
+    margin-left: 10px;
+}
+.settings-wr .settings-content .cursor a.def-cursor-btn.active svg {
+    color: rgb(255, 255, 255);
+}

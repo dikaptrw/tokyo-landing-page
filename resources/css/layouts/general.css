@@ -1,0 +1,291 @@
+
+/* root el style */
+html body .all-wr,
+html body {
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    min-width: 370px !important;
+}
+* {
+	-webkit-tap-highlight-color: transparent;
+}
+
+
+/* max-width content */
+.mx__wd {
+    max-width: 960px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* scrollbar */
+/* width */
+.all-wr .right-section .content__section::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+/* Track */
+.all-wr .right-section .content__section::-webkit-scrollbar-track {
+    background: #f1f1f1 !important;
+}
+/* Handle */
+.all-wr .right-section .content__section::-webkit-scrollbar-thumb {
+    background: #c9c9c9 !important;
+    border-radius: 10px;
+}
+/* Handle on hover */
+.all-wr .right-section .content__section::-webkit-scrollbar-thumb:hover {
+    background: #bbbbbb !important;
+}
+
+
+/* navigation link */
+.nav__link {
+    color: rgb(153, 153, 153);
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 0.9375rem/* 15px */;
+    transition: letter-spacing .5s;
+}
+.nav__link:hover {
+    letter-spacing: 2px;
+}
+.nav__link.active {
+    letter-spacing: 2px;
+    color: var(--color-mode);
+    font-weight: 600;
+}
+
+
+/* right content section */
+.right-section .content__section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(5%);
+    margin-left: 0px;
+    margin-top: 68px;
+    transition: transform .3s ease .3s, opacity 0s ease .3s;
+}
+.right-section .content__section.active {
+    transform: translateX(0%);
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* modal box */
+.modal__box {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgb(0, 0, 0, 0.75);
+    transition: all .5s;
+}
+.modal__box.opened {
+    opacity: 1;
+    visibility: visible;
+}
+.modal__box.opened .modal__box__inner {
+    transform: translate(-50%, 0%);
+}
+.modal__box .modal__box__inner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    background-color: #fff;
+    transition: all .5s;
+}
+.modal__box .modal__box__inner .modal__close__btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid #000;
+    padding: 5px;
+    right: 25px;
+    top: 25px;
+    transform: translateX(0%);
+    cursor: pointer;
+    transition: all .5s;
+}
+.modal__box .modal__box__inner .modal__content {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+/* scrollbar modal */
+.modal__box .modal__box__inner .modal__content::-webkit-scrollbar,
+.modal__box .modal__box__inner .modal__content::-webkit-scrollbar-thumb {
+    width: 17px;
+    background-color: transparent !important;
+    border-radius: 13px;
+    background-clip: padding-box;
+    border: 5px solid transparent;
+}
+.modal__box .modal__box__inner .modal__content::-webkit-scrollbar-thumb {        
+    box-shadow: inset 0 0 0 10px;
+}
+.modal__box .modal__box__inner .modal__content:hover {
+    color: rgb(221, 221, 221);
+}
+.modal__box .modal__box__inner .modal__content {
+    overflow-y: overlay;
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0 0 black;
+    transition: color .3s ease;
+}
+.modal__box .modal__box__inner .modal__content > div {
+    color: #000;
+}
+
+
+
+/* modal box content */
+.modal__box__content {
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgb(0, 0, 0, 0.75);
+    transition: all .5s;
+    overflow-y: auto;
+}
+.modal__box__content.opened {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal__box__content .modal__box__inner {
+    position: relative;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 45px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.modal__box__content .modal__box__inner .modal__close__btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 5px;
+    right: 0;
+    top: -5px;
+    transform: translateY(-100%);
+    cursor: pointer;
+    transition: all .5s;
+}
+.modal__box__content .modal__box__inner .modal__close__btn svg {
+    width: 20px;
+    height: 20px;
+    color: rgb(221, 221, 221);
+}
+.modal__box__content .modal__box__inner .modal__close__btn:hover svg {
+    color: rgb(255, 255, 255);
+}
+
+.modal__box__content .modal__box__inner .modal__content {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 850px;
+    width: 100%;
+}
+
+.modal__box__content .modal__box__inner .modal__content .iframe-scaler iframe {
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1050;
+}
+.modal__box__content .modal__box__inner .modal__content .iframe-scaler {
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+
+
+
+@screen xl {
+    /* right content section */
+    .right-section .content__section {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        opacity: 0;
+        visibility: hidden;
+        overflow-x: hidden;
+        overflow-y: auto;
+        transform: translateX(5%);
+        margin-left: 400px;
+        margin-top: 0px;
+        transition: transform .3s ease .3s, opacity 0s ease .3s;
+    }
+
+    /* modal box */
+    .modal__box .modal__box__inner {
+        position: absolute;
+        top: 70px;
+        bottom: 70px;
+        width: 950px;
+        left: 50%;
+        transform: translate(-50%, -5%);
+        background-color: #fff;
+        transition: all .5s;
+    }
+    .modal__box .modal__box__inner .modal__close__btn {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        padding: 10px;
+        right: -20px;
+        top: 0;
+        transform: translateX(100%);
+        cursor: pointer;
+    }
+}

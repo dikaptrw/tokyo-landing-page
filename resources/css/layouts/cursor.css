@@ -1,0 +1,58 @@
+
+.mouse-cursor {
+    position: fixed;
+    z-index: 300;
+    display: none;
+    right: 0;
+    top: 0;
+    pointer-events: none;
+    border-radius: 50%;
+}
+.all-wr[data-magic-cursor="hide"] .mouse-cursor {
+    display: none;
+}
+.mouse-cursor.cursor-inner {
+    margin-left: -3px;
+    margin-top: -3px;
+    width: 6px;
+    height: 6px;
+    z-index: 100;
+    background-color: var(--color-mode);
+    -webkit-transition: width .3s ease-in-out,height .3s ease-in-out,margin .3s ease-in-out,opacity .3s ease-in-out;
+    transition: width .3s ease-in-out,height .3s ease-in-out,margin .3s ease-in-out,opacity .3s ease-in-out;
+}
+.mouse-cursor.cursor-outer {
+    margin-left: -15px;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--color-mode);
+    box-sizing: border-box;
+    z-index: 100;
+    opacity: .5;
+    -webkit-box-sizing: border-box;
+    -webkit-transition: all .08s ease-out;
+    transition: all .08s ease-out;
+}
+
+.mouse-cursor.cursor-outer.mouse-hover {
+    opacity: 0;
+}
+.mouse-cursor.cursor-inner.mouse-hover {
+    margin-left: -40px;
+    margin-top: -40px;
+    width: 80px;
+    height: 80px;
+    opacity: .3;
+}
+
+@screen lg {
+    .mouse-cursor {
+        position: fixed;
+        display: block;
+        right: 0;
+        top: 0;
+        pointer-events: none;
+        border-radius: 50%;
+    }
+}
