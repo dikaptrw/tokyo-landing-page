@@ -13,12 +13,10 @@
 
 .right-section #contact .form-message button[type="submit"] {
     background-color: var(--color-mode);
-}
-.right-section #contact .form-message button[type="submit"] > a {
     color: #fff;
     transition: letter-spacing .5s;
 }
-.right-section #contact .form-message button[type="submit"]:hover a {
+.right-section #contact .form-message button[type="submit"]:hover {
     letter-spacing: 2px;
 }
 
