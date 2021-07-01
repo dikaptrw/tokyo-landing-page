@@ -34,12 +34,10 @@
 }
 
 
-
-@screen md {
+@screen lg {
     .all-wr .left-section.opened {
         display: none;
     }
-
     .all-wr .left-section {
         position: absolute;
         width: 400px;
