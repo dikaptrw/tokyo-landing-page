@@ -1,7 +1,7 @@
 
 :root {
     --color-mode: #000;
-    --color-mode-light: rgba(204, 204, 204, 0.1);
+    --color-mode-light: rgba(204, 204, 204, 0.2);
 }
 
 [data-color="red"] {
@@ -21,7 +21,7 @@
 
 [data-color="green"] {
     --color-mode: #48bb78;
-    --color-mode-light: rgba(167, 243, 208, 0.1);
+    --color-mode-light: rgba(167, 243, 208, 0.15);
 }
 
 [data-color="pink"] {

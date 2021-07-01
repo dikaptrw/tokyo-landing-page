@@ -249,28 +249,62 @@
         </div>
 
         <!-- navigation mobile -->
-        <div class="nav-menu-mobile z-10 fixed flex items-center justify-between top-0 xl:hidden w-full bg-white h-17 px-8 sm:px-12">
+        <div class="bg-white z-10 fixed xl:hidden flex items-center justify-between top-0 w-full h-17 px-8 sm:px-12">
             <!-- logo -->
-            <a href="#">
-                <img class="h-4" src="https://marketifythemes.com/html/tokyo/img/logo/dark.png" alt="">
-            </a>
-
-            <!-- burger button -->
-            <div id="burger" class="md:hidden cursor-pointer p-2">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path class="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                    <path class="close hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
+            <div class="w-1/4">
+                <a href="#">
+                    <img class="h-4" src="https://marketifythemes.com/html/tokyo/img/logo/dark.png" alt="">
+                </a>
             </div>
 
-            <!-- nav menu mobile -->
-            <ul class="hidden md:flex">
+            <!-- menu link -->
+            <ul class="w-2/4 hidden lg:flex justify-center">
                 <li class="pl-5"><a class="nav__link active" href="#home">Home</a></li>
                 <li class="pl-5"><a class="nav__link" href="#about">About</a></li>
                 <li class="pl-5"><a class="nav__link" href="#portfolio">Portfolio</a></li>
                 <li class="pl-5"><a class="nav__link" href="#news">News</a></li>
                 <li class="pl-5"><a class="nav__link" href="#contact">Contact</a></li>
             </ul>
+
+            <!-- social link -->
+            <ul class="w-1/4 hidden lg:flex justify-end">
+                <li>
+                    <a class="w-10 h-10 rounded-full inline-flex items-center justify-center" href="#">
+                        <svg class="w-4.5 h-4.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="w-10 h-10 rounded-full inline-flex items-center justify-center" href="#">
+                        <svg class="w-4.5 h-4.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="w-10 h-10 rounded-full inline-flex items-center justify-center" href="#">
+                        <svg class="w-4.5 h-4.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="w-10 h-10 rounded-full inline-flex items-center justify-center" href="#">
+                        <svg class="w-4.5 h-4.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.25a1.25 1.25 0 0 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 4c-2.474 0-2.878.007-4.029.058-.784.037-1.31.142-1.798.332-.434.168-.747.369-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.006 9.075 4 9.461 4 12c0 2.474.007 2.878.058 4.029.037.783.142 1.31.331 1.797.17.435.37.748.702 1.08.337.336.65.537 1.08.703.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.474 0 2.878-.007 4.029-.058.782-.037 1.309-.142 1.797-.331.433-.169.748-.37 1.08-.702.337-.337.538-.65.704-1.08.19-.493.296-1.02.332-1.8.052-1.104.058-1.49.058-4.029 0-2.474-.007-2.878-.058-4.029-.037-.782-.142-1.31-.332-1.798a2.911 2.911 0 0 0-.703-1.08 2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.925 4.006 14.539 4 12 4zm0-2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- burger button -->
+            <div id="burger" class="lg:hidden cursor-pointer p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path class="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    <path class="close hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </div>
         </div>
 
         <!-- left section -->
@@ -290,8 +324,40 @@
                     <li class="py-1"><a class="nav__link" href="#contact">Contact</a></li>
                 </ul>
             </div>
+
+            <ul class="flex mb-6">
+                <li>
+                    <a class="mr-4 rounded-full inline-flex items-center justify-center" href="#">
+                        <svg class="w-4.5 h-4.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="mr-4 rounded-full inline-flex items-center justify-center" href="#">
+                        <svg class="w-4.5 h-4.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="mr-4 rounded-full inline-flex items-center justify-center" href="#">
+                        <svg class="w-4.5 h-4.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="mr-4 rounded-full inline-flex items-center justify-center" href="#">
+                        <svg class="w-4.5 h-4.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.25a1.25 1.25 0 0 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 4c-2.474 0-2.878.007-4.029.058-.784.037-1.31.142-1.798.332-.434.168-.747.369-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.006 9.075 4 9.461 4 12c0 2.474.007 2.878.058 4.029.037.783.142 1.31.331 1.797.17.435.37.748.702 1.08.337.336.65.537 1.08.703.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.474 0 2.878-.007 4.029-.058.782-.037 1.309-.142 1.797-.331.433-.169.748-.37 1.08-.702.337-.337.538-.65.704-1.08.19-.493.296-1.02.332-1.8.052-1.104.058-1.49.058-4.029 0-2.474-.007-2.878-.058-4.029-.037-.782-.142-1.31-.332-1.798a2.911 2.911 0 0 0-.703-1.08 2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.925 4.006 14.539 4 12 4zm0-2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
             <div class="copyright">
-                <p class="italic text-base leading-6 text-gray-400">© 2021 Tokyo<br>Created by <a class="text-black" href="https://www.instagram.com/dikaptrw" target="_blank">Dikaptrw</a></p>
+                <p class="italic text-base leading-6 text-gray-400">2021 Tokyo<br>Created by <a class="text-black" href="https://www.instagram.com/dikaptrw" target="_blank">Dikaptrw</a></p>
             </div>
         </div>
     
@@ -304,29 +370,17 @@
             <div id="home" class="content__section active flex flex-col lg:flex-row justify-center items-center px-10 sm:px-17 md:px-28 lg:px-44 xl:px-17">
                 <div class="mx__wd flex flex-col lg:flex-row justify-center items-center">
                     <div class="mb-7 lg:mb-0">
-                        <div class="avatar" style="background-image: url('./img/avatar.jpg');"></div>
+                        <div class="avatar" style="background-image: url('./img/avatar.png');"></div>
                     </div>
     
                     <div class="lg:ml-14 text-center lg:text-left">
                         <h3 class="name text-4.5xl md:text-5.5xl mb-3 uppercase font-extrabold">Gavin <span>Ashley</span></h3>
+
                         <p class="text-2sm md:text-base font-medium text-gray-500 italic leading-7">Creative Photographer based in New York and happy to travel all over Europe to capture photos.</p>
-                        <div class="flex justify-center lg:justify-start mt-6">
-                            <a class="w-10 h-10 mr-2 flex items-center justify-center rounded-full border" href="">
-                                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/></svg>
-                            </a>
-                            <a class="w-10 h-10 mr-2 flex items-center justify-center rounded-full border" href="">
-                                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"/></svg>
-                            </a>
-                            <a class="w-10 h-10 mr-2 flex items-center justify-center rounded-full border" href="">
-                                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/></svg>
-                            </a>
-                            <a class="w-10 h-10 mr-2 flex items-center justify-center rounded-full border" href="">
-                                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"/></svg>
-                            </a>
-                            <a class="w-10 h-10 mr-2 flex items-center justify-center rounded-full border" href="">
-                                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm9.06 8.683L5.648 6.238 4.353 7.762l7.72 6.555 7.581-6.56-1.308-1.513-6.285 5.439z"/></svg>
-                            </a>
-                        </div>
+
+                        <a href="./cv/cv.pdf" target="__blank" class="px-4.5 py-2.5 mt-6 text-sm font-medium focus:outline-none">
+                            Download CV
+                        </a>
                     </div>
                 </div>
             </div>
@@ -334,69 +388,74 @@
             <!-- about section -->
             <div id="about" class="content__section px-8 sm:px-12 md:px-36 xl:px-20 py-15">
                 <div class="mx__wd">
-                    <div class="badge inline-block py-2 px-4 mb-6 uppercase text-2xs font-semibold">
+                    <div class="badge inline-block py-2 px-4 mb-4 uppercase text-2xs font-semibold">
                         About
                     </div>
-                    <div class="w-full h-96 mb-8">
-                        <img class="w-full h-full object-cover" src="./img/avatar.jpg" alt="">
-                    </div>
-    
-                    <h2 class="name font-bold text-2xl mb-7 text-center lg:text-left">Gavin Ashley & <span>Photographer</span></h2>
-    
-                    <div class="description flex flex-col lg:flex-row mb-5">
-                        <div class="w-full lg:w-3/5 lg:pr-10 text-center lg:text-left">
-                            <p class="text-gray-500 italic text-2base leading-8">
-                                Hello, I am a creative photographer based in New York and happy to travel all over Europe to capture your big day in candid and authentic photos. I will create a lasting memory of the people.
-                            </p>
-                            <button class="learn-more py-3 px-5 mt-7 focus:outline-none">
-                                <a href="#about">Learn More</a>
-                            </button>
+
+                    <h1 class="title text-3xl font-extrabold text-gray-800 mb-8">About Me</h1>
+                    
+                    <div class="flex flex-col lg:flex-row gap-20 pb-5 lg:pb-20">
+                        <div class="pf-images w-full lg:w-1/2">
+                            <a href="./img/avatar.png" class="open-lightbox" data-description="Gavin Ashley">
+                                <img class="w-full h-full object-cover" src="./img/avatar.png">
+                            </a>
+
+                            <a class="image-sm open-lightbox" href="./img/avatar2.png" data-description="Gavin Ashley">
+                                <img class="w-full h-full object-cover" src="./img/avatar2.png">
+                            </a>
                         </div>
-                        <div class="w-full lg:w-2/5 mt-10 lg:mt-0 flex flex-col lg:flex-row items-center lg:items-start">
-                            <ul>
-                                <li>
-                                    <p>
-                                        <span>Birthday :</span>
-                                        06.10.1999
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                        <span>Age :</span>
-                                        21
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                        <span>Address :</span>
-                                        Ave 11, New York, USA
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                        <span>Email :</span>
-                                        <a href="mailto:mail@gmail.com">mail@gmail.com</a>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                        <span>Phone :</span>
-                                        <a href="tel:+770221770505">+77 022 177 05 05</a>
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                        <span>Study :</span>
-                                        ITB Stikom Bali
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                        <span>Freelance :</span>
-                                        <a href="#contact">Available</a>
-                                    </p>
-                                </li>
-                            </ul>
+    
+                        <div class="w-full lg:w-1/2">
+                            <h2 class="name font-extrabold text-2xl mb-5">Hello, i'am <span>Gavin Ashley</span></h2>
+    
+                            <div class="description">
+                                <p class="text-gray-500 italic text-2base leading-8">
+                                    Hello, I am a creative photographer based in New York and happy to travel all over Europe to capture your big day in candid and authentic photos. I will create a lasting memory of the people.
+                                </p>
+
+                                <ul class="mt-4 ">
+                                    <li>
+                                        <p>
+                                            <span>Age</span>
+                                            21
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <span>Address</span>
+                                            Ave 11, New York, USA
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <span>Email</span>
+                                            <a href="mailto:mail@gmail.com">mail@gmail.com</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <span>Phone</span>
+                                            <a href="tel:+770221770505">+77 022 177 05 05</a>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <span>Study</span>
+                                            ITB Stikom Bali
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <span>Freelance</span>
+                                            <a href="#contact">Available</a>
+                                        </p>
+                                    </li>
+                                </ul>
+
+                                <button class="learn-more py-3 px-5 mt-7 focus:outline-none">
+                                    Learn More
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -506,34 +565,6 @@
                                     <div class="image-wr" data-title="Hanna Merrill" data-category="Youtube">
                                         <a href="https://www.youtube.com/watch?v=yDyNTGMaU9Y">
                                             <div class="image" style="background-image: url('./img/portfolio/1.jpg');"></div>
-                                            <div class="image-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path fill="none" d="M0 0h24v24H0z"/><path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"/>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="image">
-                                <div class="list-inner">
-                                    <div class="image-wr" data-title="Carissa Hicks" data-category="Image">
-                                        <a class="open-lightbox" data-description="Throw kindness around like confetti." href="./img/portfolio/3.jpg">
-                                            <div class="image" style="background-image: url('./img/portfolio/3.jpg');"></div>
-                                            <div class="image-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path fill="none" d="M0 0h24v24H0z"/><path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"/>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="image">
-                                <div class="list-inner">
-                                    <div class="image-wr" data-title="Carissa Hicks" data-category="Image">
-                                        <a class="open-lightbox" data-description="Throw kindness around like confetti." href="./img/portfolio/3.jpg">
-                                            <div class="image" style="background-image: url('./img/portfolio/3.jpg');"></div>
                                             <div class="image-icon">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                                                     <path fill="none" d="M0 0h24v24H0z"/><path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"/>

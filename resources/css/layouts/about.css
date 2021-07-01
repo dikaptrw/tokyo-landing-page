@@ -1,4 +1,39 @@
 
+.right-section #about .pf-images {
+    position: relative;
+    height: 450px;
+}
+
+.right-section #about .pf-images .image-sm {
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    bottom: -10%;
+    right: -5%;
+    z-index: 1;
+}
+.right-section #about .pf-images .image-sm img {
+    transition: transform .5s;
+}
+.right-section #about .pf-images .image-sm:hover img {
+    transform: scale(1.1);
+}
+
+.right-section #about .pf-images > a:first-child {
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.right-section #about .pf-images > a:first-child img {
+    transition: transform .5s;
+}
+.right-section #about .pf-images > a:first-child:hover img {
+    transform: scale(1.1);
+}
+
 .right-section #about span {
     color: var(--color-mode);
 }
@@ -7,33 +42,37 @@
     background-color: var(--color-mode-light);
 }
 
-.right-section #about .description >div>ul>li span {
-    display: inline-block;
-    min-width: 90px;
-    font-weight: 600;
+.right-section #about .name {
+    margin-top: 0px;
 }
 
-.right-section #about .description >div>ul>li {
+.right-section #about .description > ul > li span {
+    margin-right: 5px;
+    display: inline-block;
+    font-weight: 600;
+    color: var(--color-mode);
+}
+
+.right-section #about .description > ul > li {
     padding: 5px 0px;
     font-size: 14px;
 }
 
 .right-section #about .description button {
     background-color: var(--color-mode);
+    color: #fff !important;
+    transition: letter-spacing .5s;
 }
-.right-section #about .description button:hover a{
+.right-section #about .description button:hover {
     letter-spacing: 1px;
     color: var(--color-mode);
 }
-.right-section #about .description button a {
-    color: #fff !important;
-    transition: all .5s;
+
+.right-section #about .description a {
+    transition: letter-spacing .5s;
 }
 .right-section #about .description a:hover {
     letter-spacing: 1px;
-}
-.right-section #about .description a {
-    transition: letter-spacing .5s;
 }
 
 
@@ -53,4 +92,28 @@
 }
 .modal__box.about .modal__box__inner .modal__content .partners .swiper-slide a:hover img {
     opacity: 1;
+}
+
+
+@screen sm {
+    .right-section #about .name {
+        margin-top: -50px;
+    }
+
+    .right-section #about .pf-images .image-sm {
+        display: inline-block;
+        overflow: hidden;
+        position: absolute;
+        width: 40%;
+        height: 40%;
+        bottom: -10%;
+        right: -10%;
+        z-index: 1;
+    }
+}
+
+@screen lg {
+    .right-section #about .name {
+        margin-top: 0px;
+    }
 }

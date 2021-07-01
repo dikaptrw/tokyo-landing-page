@@ -1,6 +1,6 @@
 
 // burger navigation mobile
-const leftSection = $('.left-section');
+const leftSection = $('.all-wr .left-section');
 
 function toggleSidebar() {
     $('#burger path:first-child, #burger path:nth-child(2)').toggleClass('block').toggleClass('hidden');
@@ -34,7 +34,7 @@ linkArr.forEach(function(link) {
         // scroll to top
         if ($(`#${link}.content__section`).scrollTop() != 0) {
             setTimeout(() => {
-                $(`#${link}.content__section`).animate({ scrollTop: 0 }, "slow")
+                $(`#${link}.content__section`).animate({ scrollTop: 0 }, "slow");
             }, 200);
         }
     });
@@ -68,6 +68,9 @@ $(window).on('load', contentChange);
 // about modal open and close
 $(document).on('click', '#about .description .learn-more', function() {
     $('.modal__box.about').addClass('opened');
+    setTimeout(() => {
+        $('.modal__box.about .modal__box__inner .modal__content').animate({ scrollTop: 0 }, "slow");
+    }, 100);
 });
 $(document).on('click', '.modal__box.about .modal__box__inner .modal__close__btn', function() {
     $('.modal__box.about').removeClass('opened');
@@ -255,10 +258,10 @@ $(document).on('click', '.list-wr.portfolio ul > li', function(e) {
     }
 });
 
-
-// close modal content when fade clicked
+// global window on click
 $(window).on('click', function(e) {
     if (!window.getSelection().toString()) {
+        // close modal content when fade clicked
         if(e.target == $('.modal__box__content.opened .modal__box__inner')[0]) {
             $('.modal__box__content.opened').removeClass('opened');
             setTimeout(() => {
@@ -344,6 +347,11 @@ $(document).on({
         $('.mouse-cursor').removeClass('mouse-hover');
     }
 }, "body a, body button");
+$(document).on({
+    click: function () {
+        $('.mouse-cursor').removeClass('mouse-hover');
+    }
+}, ".lightbox-wrapper .lightbox-close-btn");
 
 
 
