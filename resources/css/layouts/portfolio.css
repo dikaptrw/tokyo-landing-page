@@ -29,21 +29,17 @@
 
 /* list */
 .right-section #portfolio .list-wr {
-    display: inline-block;
     margin-top: 50px;
-    width: 100%;
-    max-width: 100%;
 }
 .right-section #portfolio .list-wr ul {
     margin-left: 0px;
 }
+
 .right-section #portfolio .list-wr ul > li {
     margin: 0 0 50px;
     float: left;
     width: 100%;
     padding-left: 0px;
-    opacity: 1;
-    transition: transform .5s;
 }
 .right-section #portfolio .list-wr ul > li .list-inner .image-wr {
     position: relative;
@@ -142,20 +138,6 @@
     visibility: visible;
 }
 
-@screen md {
-    .right-section #portfolio .list-wr ul {
-        position: relative;
-        margin-left: -50px;
-    }
-    .right-section #portfolio .list-wr ul > li {
-        margin: 0 0 50px;
-        float: left;
-        width: 50%;
-        padding-left: 50px;
-        opacity: 1;
-        transition: transform .5s;
-    }
-}
 
 @screen sm {
     .right-section #portfolio .menu > li > a {
@@ -166,6 +148,20 @@
         transition: letter-spacing .4s;
     }
 }
+
+
+@screen md {
+    .right-section #portfolio .list-wr ul {
+        margin-left: -50px;
+    }
+    .right-section #portfolio .list-wr ul > li {
+        margin: 0 0 50px;
+        float: left;
+        width: 50%;
+        padding-left: 50px;
+    }
+}
+
 
 @screen lg {
     .right-section #portfolio .menu > li {
