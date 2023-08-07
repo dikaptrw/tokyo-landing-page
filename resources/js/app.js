@@ -2,17 +2,17 @@
 const leftSection = $(".all-wr .left-section");
 
 function toggleSidebar() {
-  $("#burger path:first-child, #burger path:nth-child(2)")
-    .toggleClass("block")
-    .toggleClass("hidden");
+  // $("#burger path:first-child, #burger path:nth-child(2)")
+  //   .toggleClass("block")
+  //   .toggleClass("hidden");
 
-  if ($("#burger path:first-child").hasClass("hidden")) {
+  if (!leftSection.hasClass("opened")) {
     leftSection.addClass("opened");
   } else {
     leftSection.removeClass("opened");
   }
 }
-$(document).on("click", "#burger", toggleSidebar);
+$(document).on("click", "#burger, #closeSidebarBtn", toggleSidebar);
 
 // navigation menu onclick
 const linkArr = ["home", "about", "portfolio", "news", "contact"];
