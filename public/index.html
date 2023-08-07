@@ -1,1007 +1,1713 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="description" content="Creative Photographer based in New York and happy to travel all over Europe to capture photos. (Your description)">
-    <link rel="canonical" href="http://tokyo-landpage.herokuapp.com">
-    <meta property="og:description" content="Creative Photographer based in New York and happy to travel all over Europe to capture photos. (Your description)">
-    <meta property="og:title" content="Gavin Ashley - Profile (Title)">
-    <meta property="og:type" content="articles">
-    <meta property="og:url" content="http://tokyo-landpage.herokuapp.com">
+    <meta
+      name="description"
+      content="Creative Photographer based in New York and happy to travel all over Europe to capture photos. (Your description)"
+    />
+    <link rel="canonical" href="http://tokyo-landpage.herokuapp.com" />
+    <meta
+      property="og:description"
+      content="Creative Photographer based in New York and happy to travel all over Europe to capture photos. (Your description)"
+    />
+    <meta property="og:title" content="Gavin Ashley - Profile (Title)" />
+    <meta property="og:type" content="articles" />
+    <meta property="og:url" content="http://tokyo-landpage.herokuapp.com" />
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Gavin Ashley - Profile (Title)">
-    <meta name="twitter:url" content="http://tokyo-landpage.herokuapp.com">
-    <meta name="twitter:description" content="Creative Photographer based in New York and happy to travel all over Europe to capture photos. (Your description)">
-    <meta name="twitter:image:src" content="http://tokyo-landpage.herokuapp.com/img/avatar.png">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Gavin Ashley - Profile (Title)" />
+    <meta name="twitter:url" content="http://tokyo-landpage.herokuapp.com" />
+    <meta
+      name="twitter:description"
+      content="Creative Photographer based in New York and happy to travel all over Europe to capture photos. (Your description)"
+    />
+    <meta
+      name="twitter:image:src"
+      content="http://tokyo-landpage.herokuapp.com/img/avatar.png"
+    />
 
     <title>Tokyo | Home</title>
 
-    <link rel="stylesheet" href="./css/app.css"/>
+    <link rel="stylesheet" href="./css/app.css" />
     <link rel="stylesheet" href="./vendor/swiper/swiper-bundle.min.css" />
-</head>
-<body>
+  </head>
+  <body>
     <!-- all wrapper -->
     <div class="all-wr xl:flex" data-magic-cursor="show" data-color="black">
-        <!-- settings -->
-        <div class="settings-wr">
-            <div class="icon">
-                <a class="settings-btn" href="#">
-                    <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M2.132 13.63a9.942 9.942 0 0 1 0-3.26c1.102.026 2.092-.502 2.477-1.431.385-.93.058-2.004-.74-2.763a9.942 9.942 0 0 1 2.306-2.307c.76.798 1.834 1.125 2.764.74.93-.385 1.457-1.376 1.43-2.477a9.942 9.942 0 0 1 3.262 0c-.027 1.102.501 2.092 1.43 2.477.93.385 2.004.058 2.763-.74a9.942 9.942 0 0 1 2.307 2.306c-.798.76-1.125 1.834-.74 2.764.385.93 1.376 1.457 2.477 1.43a9.942 9.942 0 0 1 0 3.262c-1.102-.027-2.092.501-2.477 1.43-.385.93-.058 2.004.74 2.763a9.942 9.942 0 0 1-2.306 2.307c-.76-.798-1.834-1.125-2.764-.74-.93.385-1.457 1.376-1.43 2.477a9.942 9.942 0 0 1-3.262 0c.027-1.102-.501-2.092-1.43-2.477-.93-.385-2.004-.058-2.763.74a9.942 9.942 0 0 1-2.307-2.306c.798-.76 1.125-1.834.74-2.764-.385-.93-1.376-1.457-2.477-1.43zM12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                    </svg>
-                </a>
-            </div>
-            <div class="settings-content">
-                <div class="title">
-                    Favorite Color
-                </div>
-                <ul class="colors">
-                    <li><a class="green" href="#"></a></li>
-                    <li><a class="blue" href="#"></a></li>
-                    <li><a class="crimson" href="#"></a></li>
-                    <li><a class="orange" href="#"></a></li>
-                    <li><a class="pink" href="#"></a></li>
-                    <li><a class="brown" href="#"></a></li>
-                    <li><a class="black" href="#"></a></li>
-                    <li><a class="purple" href="#"></a></li>
-                    <li><a class="cadetBlue" href="#"></a></li>
-                    <li><a class="sky" href="#"></a></li>
-                    <li><a class="yellow" href="#"></a></li>
-                    <li><a class="olive" href="#"></a></li>
-                </ul>
-                <div class="title">
-                    Magic Cursor
-                </div>
-                <ul class="cursor">
-                    <li>
-                        <a class="magic-cursor-btn active" href="#"></a>
-                    </li>
-                    <li>
-                        <a class="def-cursor-btn" href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+      <!-- settings -->
+      <div class="settings-wr">
+        <div class="icon">
+          <a class="settings-btn" href="#">
+            <svg
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M2.132 13.63a9.942 9.942 0 0 1 0-3.26c1.102.026 2.092-.502 2.477-1.431.385-.93.058-2.004-.74-2.763a9.942 9.942 0 0 1 2.306-2.307c.76.798 1.834 1.125 2.764.74.93-.385 1.457-1.376 1.43-2.477a9.942 9.942 0 0 1 3.262 0c-.027 1.102.501 2.092 1.43 2.477.93.385 2.004.058 2.763-.74a9.942 9.942 0 0 1 2.307 2.306c-.798.76-1.125 1.834-.74 2.764.385.93 1.376 1.457 2.477 1.43a9.942 9.942 0 0 1 0 3.262c-1.102-.027-2.092.501-2.477 1.43-.385.93-.058 2.004.74 2.763a9.942 9.942 0 0 1-2.306 2.307c-.76-.798-1.834-1.125-2.764-.74-.93.385-1.457 1.376-1.43 2.477a9.942 9.942 0 0 1-3.262 0c.027-1.102-.501-2.092-1.43-2.477-.93-.385-2.004-.058-2.763.74a9.942 9.942 0 0 1-2.307-2.306c.798-.76 1.125-1.834.74-2.764-.385-.93-1.376-1.457-2.477-1.43zM12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+              />
+            </svg>
+          </a>
         </div>
-
-        <!-- modal box about section -->
-        <div class="modal__box__content">
-            <div class="modal__box__inner">
-                <div class="modal__content">
-                    <button class="modal__close__btn focus:outline-none" title="Close (Esc)">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
-                        </svg>
-                    </button>
-                    <div class="iframe-scaler">
-                    </div>
-                    <div class="modal__content__loader">
-                        <div id="loading"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- modal box about section -->
-        <div class="modal__box about">
-            <div class="modal__box__inner">
-                <button class="modal__close__btn focus:outline-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 xl:h-6 xl:w-6 text-black xl:text-white pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
-                    </svg>
-                </button>
-
-                <div class="modal__content py-18 px-8 md:px-12 lg:px-18">
-                    <!-- skills -->
-                    <div class="skills flex flex-col md:flex-row gap-19">
-                        <div class="w-full md:w-1/2">
-                            <h3 class="font-bold text-1.5xl tracking-wide mb-8 text-gray-800">Photography Skills</h3>
-
-                            <!-- progress bar -->
-                            <div>
-                                <div class="mt-4">
-                                    <span class="flex justify-between mb-2">
-                                        <span class="italic text-gray-500">Wedding Photography</span>
-                                        <span>95%</span>
-                                    </span>
-                                    <div class="progress-bar w-full bg-gray-100">
-                                        <div class="h-full" style="width: 95%;"></div>
-                                    </div>
-                                </div>
-                                <div class="mt-4">
-                                    <span class="flex justify-between mb-2">
-                                        <span class="italic text-gray-500">Model Photography</span>
-                                        <span>90%</span>
-                                    </span>
-                                    <div class="progress-bar w-full bg-gray-100">
-                                        <div class="h-full" style="width: 90%;"></div>
-                                    </div>
-                                </div>
-                                <div class="mt-4">
-                                    <span class="flex justify-between mb-2">
-                                        <span class="italic text-gray-500">Family Photography</span>
-                                        <span>85%</span>
-                                    </span>
-                                    <div class="progress-bar w-full bg-gray-100">
-                                        <div class="h-full" style="width: 85%;"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="w-full md:w-1/2">
-                            <h3 class="font-bold text-1.5xl tracking-wide mb-8 text-gray-800">Language Skills</h3>
-
-                            <!-- progress bar -->
-                            <div>
-                                <div class="mt-4">
-                                    <span class="flex justify-between mb-2">
-                                        <span class="italic text-gray-500">English</span>
-                                        <span>100%</span>
-                                    </span>
-                                    <div class="progress-bar w-full bg-gray-100">
-                                        <div class="h-full" style="width: 100%;"></div>
-                                    </div>
-                                </div>
-                                <div class="mt-4">
-                                    <span class="flex justify-between mb-2">
-                                        <span class="italic text-gray-500">French</span>
-                                        <span>90%</span>
-                                    </span>
-                                    <div class="progress-bar w-full bg-gray-100">
-                                        <div class="h-full" style="width: 90%;"></div>
-                                    </div>
-                                </div>
-                                <div class="mt-4">
-                                    <span class="flex justify-between mb-2">
-                                        <span class="italic text-gray-500">Japanese</span>
-                                        <span>85%</span>
-                                    </span>
-                                    <div class="progress-bar w-full bg-gray-100">
-                                        <div class="h-full" style="width: 85%;"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- fun facts -->
-                    <div class="fun-facts mt-18">
-                        <h3 class="font-bold text-1.5xl tracking-wide mb-8 text-gray-800">Fun Facts</h3>
-
-                        <!-- facts box -->
-                        <ul class="flex flex-col md:flex-row gap-10">
-                            <li class="w-full md:w-1/3 h-40 flex flex-col justify-center items-center rounded border">
-                                <h3 class="font-bold text-1.5xl mb-1">500+</h3>
-                                <span class="text-gray-600">Projects Complete</span>
-                            </li>
-                            <li class="w-full md:w-1/3 h-40 flex flex-col justify-center items-center rounded border">
-                                <h3 class="font-bold text-1.5xl mb-1">500+</h3>
-                                <span class="text-gray-600">Projects Complete</span>
-                            </li>
-                            <li class="w-full md:w-1/3 h-40 flex flex-col justify-center items-center rounded border">
-                                <h3 class="font-bold text-1.5xl mb-1">500+</h3>
-                                <span class="text-gray-600">Projects Complete</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- partnert -->
-                    <div class="partners mt-18">
-                        <h3 class="font-bold text-1.5xl tracking-wide mb-8 text-gray-800">Our Partners</h3>
-
-                        <!-- partners swiper -->
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <a href="#about">
-                                        <div class="w-full h-32">
-                                            <img class="w-full h-full object-center object-cover" src="./img/partners/1.png">
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="#about">
-                                        <div class="w-full h-32">
-                                            <img class="w-full h-full object-center object-cover" src="./img/partners/2.png">
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="#about">
-                                        <div class="w-full h-32">
-                                            <img class="w-full h-full object-center object-cover" src="./img/partners/3.png">
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="#about">
-                                        <div class="w-full h-32">
-                                            <img class="w-full h-full object-center object-cover" src="./img/partners/4.png">
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- modal box news section -->
-        <div class="modal__box news">
-            <div class="modal__box__inner">
-                <button class="modal__close__btn focus:outline-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 xl:h-6 xl:w-6 text-black xl:text-white pointer-events-none" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
-                    </svg>
-                </button>
-
-                <div class="modal__content py-18 px-8 md:px-12 lg:px-18"></div>
-            </div>
-        </div>
-
-        <!-- navigation mobile -->
-        <div class="bg-white z-10 fixed xl:hidden flex items-center justify-between top-0 w-full h-17 px-8 sm:px-12">
-            <!-- logo -->
-            <div class="uppercase font-black text-2lg">
-                Tokyo
-            </div>
-
-            <!-- menu link -->
-            <ul class="w-2/4 hidden lg:flex justify-center">
-                <li class="pl-5"><a class="nav__link active" href="#home">Home</a></li>
-                <li class="pl-5"><a class="nav__link" href="#about">About</a></li>
-                <li class="pl-5"><a class="nav__link" href="#portfolio">Portfolio</a></li>
-                <li class="pl-5"><a class="nav__link" href="#news">News</a></li>
-                <li class="pl-5"><a class="nav__link" href="#contact">Contact</a></li>
-            </ul>
-
-            <!-- social link -->
-            <ul class="w-1/4 hidden lg:flex justify-end">
-                <li>
-                    <a class="w-10 h-10 rounded-full inline-flex items-center justify-center" href="#">
-                        <svg class="w-4.5 h-4.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a class="w-10 h-10 rounded-full inline-flex items-center justify-center" href="#">
-                        <svg class="w-4.5 h-4.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <path d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"/>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a class="w-10 h-10 rounded-full inline-flex items-center justify-center" href="#">
-                        <svg class="w-4.5 h-4.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"/>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a class="w-10 h-10 rounded-full inline-flex items-center justify-center" href="#">
-                        <svg class="w-4.5 h-4.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.25a1.25 1.25 0 0 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 4c-2.474 0-2.878.007-4.029.058-.784.037-1.31.142-1.798.332-.434.168-.747.369-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.006 9.075 4 9.461 4 12c0 2.474.007 2.878.058 4.029.037.783.142 1.31.331 1.797.17.435.37.748.702 1.08.337.336.65.537 1.08.703.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.474 0 2.878-.007 4.029-.058.782-.037 1.309-.142 1.797-.331.433-.169.748-.37 1.08-.702.337-.337.538-.65.704-1.08.19-.493.296-1.02.332-1.8.052-1.104.058-1.49.058-4.029 0-2.474-.007-2.878-.058-4.029-.037-.782-.142-1.31-.332-1.798a2.911 2.911 0 0 0-.703-1.08 2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.925 4.006 14.539 4 12 4zm0-2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2z"/>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-
-            <!-- burger button -->
-            <div id="burger" class="lg:hidden cursor-pointer p-2">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 pointer-events-none" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path class="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                    <path class="close hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        <div class="settings-content">
+          <div class="title">Favorite Color</div>
+          <ul class="colors">
+            <li><a class="green" href="#"></a></li>
+            <li><a class="blue" href="#"></a></li>
+            <li><a class="crimson" href="#"></a></li>
+            <li><a class="orange" href="#"></a></li>
+            <li><a class="pink" href="#"></a></li>
+            <li><a class="brown" href="#"></a></li>
+            <li><a class="black" href="#"></a></li>
+            <li><a class="purple" href="#"></a></li>
+            <li><a class="cadetBlue" href="#"></a></li>
+            <li><a class="sky" href="#"></a></li>
+            <li><a class="yellow" href="#"></a></li>
+            <li><a class="olive" href="#"></a></li>
+          </ul>
+          <div class="title">Magic Cursor</div>
+          <ul class="cursor">
+            <li>
+              <a class="magic-cursor-btn active" href="#"></a>
+            </li>
+            <li>
+              <a class="def-cursor-btn" href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"
+                  />
                 </svg>
-            </div>
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
 
-        <!-- left section -->
-        <div class="left-section">
-            <!-- logo -->
-            <div class="uppercase font-black text-2.5xl">
-                Tokyo
+      <!-- modal box about section -->
+      <div class="modal__box__content">
+        <div class="modal__box__inner">
+          <div class="modal__content">
+            <button
+              class="modal__close__btn focus:outline-none"
+              title="Close (Esc)"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+            <div class="iframe-scaler"></div>
+            <div class="modal__content__loader">
+              <div id="loading"></div>
             </div>
-
-            <!-- menu -->
-            <div class="pb-10 pt-6">
-                <ul>
-                    <li class="py-1"><a class="nav__link active" href="#home">Home</a></li>
-                    <li class="py-1"><a class="nav__link" href="#about">About</a></li>
-                    <li class="py-1"><a class="nav__link" href="#portfolio">Portfolio</a></li>
-                    <li class="py-1"><a class="nav__link" href="#news">News</a></li>
-                    <li class="py-1"><a class="nav__link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-
-            <ul class="flex mb-6">
-                <li>
-                    <a class="inline-block mr-4" href="#">
-                        <svg class="w-4.5 h-4.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a class="inline-block mr-4" href="#">
-                        <svg class="w-4.5 h-4.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <path d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"/>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a class="inline-block mr-4" href="#">
-                        <svg class="w-4.5 h-4.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"/>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a class="inline-block mr-4" href="#">
-                        <svg class="w-4.5 h-4.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <path d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.25a1.25 1.25 0 0 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 4c-2.474 0-2.878.007-4.029.058-.784.037-1.31.142-1.798.332-.434.168-.747.369-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.006 9.075 4 9.461 4 12c0 2.474.007 2.878.058 4.029.037.783.142 1.31.331 1.797.17.435.37.748.702 1.08.337.336.65.537 1.08.703.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.474 0 2.878-.007 4.029-.058.782-.037 1.309-.142 1.797-.331.433-.169.748-.37 1.08-.702.337-.337.538-.65.704-1.08.19-.493.296-1.02.332-1.8.052-1.104.058-1.49.058-4.029 0-2.474-.007-2.878-.058-4.029-.037-.782-.142-1.31-.332-1.798a2.911 2.911 0 0 0-.703-1.08 2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.925 4.006 14.539 4 12 4zm0-2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2z"/>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-
-            <div class="copyright">
-                <p class="italic text-base leading-6 text-gray-400">2021 Tokyo<br>Created by <a class="text-black" href="https://www.instagram.com/dikaptrw" target="_blank">Dikaptrw</a></p>
-            </div>
+          </div>
         </div>
-    
-        <!-- right section -->
-        <div class="right-section">
-            <!-- portfolio title -->
-            <div class="portfolio-title"></div>
-            
-            <!-- home section -->
-            <div id="home" class="content__section active flex flex-col lg:flex-row justify-center items-center px-10 sm:px-17 md:px-28 lg:px-44 xl:px-17">
-                <div class="mx__wd flex flex-col lg:flex-row justify-center items-center">
-                    <div class="mb-7 lg:mb-0">
-                        <div class="avatar" style="background-image: url('./img/avatar.png');"></div>
+      </div>
+
+      <!-- modal box about section -->
+      <div class="modal__box about">
+        <div class="modal__box__inner">
+          <button class="modal__close__btn focus:outline-none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 xl:h-6 xl:w-6 text-black xl:text-white pointer-events-none"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+
+          <div class="modal__content py-18 px-8 md:px-12 lg:px-18">
+            <!-- skills -->
+            <div class="skills flex flex-col md:flex-row gap-19">
+              <div class="w-full md:w-1/2">
+                <h3
+                  class="font-bold text-1.5xl tracking-wide mb-8 text-gray-800"
+                >
+                  Photography Skills
+                </h3>
+
+                <!-- progress bar -->
+                <div>
+                  <div class="mt-4">
+                    <span class="flex justify-between mb-2">
+                      <span class="italic text-gray-500"
+                        >Wedding Photography</span
+                      >
+                      <span>95%</span>
+                    </span>
+                    <div class="progress-bar w-full bg-gray-100">
+                      <div class="h-full" style="width: 95%"></div>
                     </div>
-    
-                    <div class="lg:ml-14 text-center lg:text-left">
-                        <h3 class="name text-4.5xl md:text-5.5xl mb-3 uppercase font-extrabold">Gavin <span>Ashley</span></h3>
+                  </div>
+                  <div class="mt-4">
+                    <span class="flex justify-between mb-2">
+                      <span class="italic text-gray-500"
+                        >Model Photography</span
+                      >
+                      <span>90%</span>
+                    </span>
+                    <div class="progress-bar w-full bg-gray-100">
+                      <div class="h-full" style="width: 90%"></div>
+                    </div>
+                  </div>
+                  <div class="mt-4">
+                    <span class="flex justify-between mb-2">
+                      <span class="italic text-gray-500"
+                        >Family Photography</span
+                      >
+                      <span>85%</span>
+                    </span>
+                    <div class="progress-bar w-full bg-gray-100">
+                      <div class="h-full" style="width: 85%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-                        <p class="text-2sm md:text-base font-medium text-gray-500 italic leading-7">Creative Photographer based in New York and happy to travel all over Europe to capture photos.</p>
+              <div class="w-full md:w-1/2">
+                <h3
+                  class="font-bold text-1.5xl tracking-wide mb-8 text-gray-800"
+                >
+                  Language Skills
+                </h3>
 
-                        <a href="./cv/cv.pdf" class="px-4.5 py-2.5 mt-6 text-sm font-medium focus:outline-none">
-                            Download CV
+                <!-- progress bar -->
+                <div>
+                  <div class="mt-4">
+                    <span class="flex justify-between mb-2">
+                      <span class="italic text-gray-500">English</span>
+                      <span>100%</span>
+                    </span>
+                    <div class="progress-bar w-full bg-gray-100">
+                      <div class="h-full" style="width: 100%"></div>
+                    </div>
+                  </div>
+                  <div class="mt-4">
+                    <span class="flex justify-between mb-2">
+                      <span class="italic text-gray-500">French</span>
+                      <span>90%</span>
+                    </span>
+                    <div class="progress-bar w-full bg-gray-100">
+                      <div class="h-full" style="width: 90%"></div>
+                    </div>
+                  </div>
+                  <div class="mt-4">
+                    <span class="flex justify-between mb-2">
+                      <span class="italic text-gray-500">Japanese</span>
+                      <span>85%</span>
+                    </span>
+                    <div class="progress-bar w-full bg-gray-100">
+                      <div class="h-full" style="width: 85%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- fun facts -->
+            <div class="fun-facts mt-18">
+              <h3 class="font-bold text-1.5xl tracking-wide mb-8 text-gray-800">
+                Fun Facts
+              </h3>
+
+              <!-- facts box -->
+              <ul class="flex flex-col md:flex-row gap-10">
+                <li
+                  class="w-full md:w-1/3 h-40 flex flex-col justify-center items-center rounded border"
+                >
+                  <h3 class="font-bold text-1.5xl mb-1">500+</h3>
+                  <span class="text-gray-600">Projects Complete</span>
+                </li>
+                <li
+                  class="w-full md:w-1/3 h-40 flex flex-col justify-center items-center rounded border"
+                >
+                  <h3 class="font-bold text-1.5xl mb-1">500+</h3>
+                  <span class="text-gray-600">Projects Complete</span>
+                </li>
+                <li
+                  class="w-full md:w-1/3 h-40 flex flex-col justify-center items-center rounded border"
+                >
+                  <h3 class="font-bold text-1.5xl mb-1">500+</h3>
+                  <span class="text-gray-600">Projects Complete</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- partnert -->
+            <div class="partners mt-18">
+              <h3 class="font-bold text-1.5xl tracking-wide mb-8 text-gray-800">
+                Our Partners
+              </h3>
+
+              <!-- partners swiper -->
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#about">
+                      <div class="w-full h-32">
+                        <img
+                          class="w-full h-full object-center object-cover"
+                          src="./img/partners/1.png"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#about">
+                      <div class="w-full h-32">
+                        <img
+                          class="w-full h-full object-center object-cover"
+                          src="./img/partners/2.png"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#about">
+                      <div class="w-full h-32">
+                        <img
+                          class="w-full h-full object-center object-cover"
+                          src="./img/partners/3.png"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#about">
+                      <div class="w-full h-32">
+                        <img
+                          class="w-full h-full object-center object-cover"
+                          src="./img/partners/4.png"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- modal box news section -->
+      <div class="modal__box news">
+        <div class="modal__box__inner">
+          <button class="modal__close__btn focus:outline-none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 xl:h-6 xl:w-6 text-black xl:text-white pointer-events-none"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+
+          <div class="modal__content py-18 px-8 md:px-12 lg:px-18"></div>
+        </div>
+      </div>
+
+      <!-- navigation mobile -->
+      <div
+        class="bg-white z-10 fixed xl:hidden flex items-center justify-between top-0 w-full h-17 px-8 sm:px-12"
+      >
+        <!-- logo -->
+        <div class="uppercase font-black text-2lg">Tokyo</div>
+
+        <!-- menu link -->
+        <ul class="w-2/4 hidden lg:flex justify-center">
+          <li class="pl-5">
+            <a class="nav__link active" href="#home">Home</a>
+          </li>
+          <li class="pl-5"><a class="nav__link" href="#about">About</a></li>
+          <li class="pl-5">
+            <a class="nav__link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="pl-5"><a class="nav__link" href="#news">News</a></li>
+          <li class="pl-5"><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- social link -->
+        <ul class="w-1/4 hidden lg:flex justify-end">
+          <li>
+            <a
+              class="w-10 h-10 rounded-full inline-flex items-center justify-center"
+              href="#"
+            >
+              <svg
+                class="w-4.5 h-4.5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="w-10 h-10 rounded-full inline-flex items-center justify-center"
+              href="#"
+            >
+              <svg
+                class="w-4.5 h-4.5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="w-10 h-10 rounded-full inline-flex items-center justify-center"
+              href="#"
+            >
+              <svg
+                class="w-4.5 h-4.5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a
+              class="w-10 h-10 rounded-full inline-flex items-center justify-center"
+              href="#"
+            >
+              <svg
+                class="w-4.5 h-4.5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.25a1.25 1.25 0 0 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 4c-2.474 0-2.878.007-4.029.058-.784.037-1.31.142-1.798.332-.434.168-.747.369-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.006 9.075 4 9.461 4 12c0 2.474.007 2.878.058 4.029.037.783.142 1.31.331 1.797.17.435.37.748.702 1.08.337.336.65.537 1.08.703.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.474 0 2.878-.007 4.029-.058.782-.037 1.309-.142 1.797-.331.433-.169.748-.37 1.08-.702.337-.337.538-.65.704-1.08.19-.493.296-1.02.332-1.8.052-1.104.058-1.49.058-4.029 0-2.474-.007-2.878-.058-4.029-.037-.782-.142-1.31-.332-1.798a2.911 2.911 0 0 0-.703-1.08 2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.925 4.006 14.539 4 12 4zm0-2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <!-- burger button -->
+        <div id="burger" class="lg:hidden cursor-pointer p-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 pointer-events-none"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              class="open"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+            <path
+              class="close hidden"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <!-- left section -->
+      <div class="left-section">
+        <!-- logo -->
+        <div class="uppercase font-black text-2.5xl">Tokyo</div>
+
+        <!-- menu -->
+        <div class="pb-10 pt-6">
+          <ul>
+            <li class="py-1">
+              <a class="nav__link active" href="#home">Home</a>
+            </li>
+            <li class="py-1"><a class="nav__link" href="#about">About</a></li>
+            <li class="py-1">
+              <a class="nav__link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="py-1"><a class="nav__link" href="#news">News</a></li>
+            <li class="py-1">
+              <a class="nav__link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="flex mb-6">
+          <li>
+            <a class="inline-block mr-4" href="#">
+              <svg
+                class="w-4.5 h-4.5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="inline-block mr-4" href="#">
+              <svg
+                class="w-4.5 h-4.5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="inline-block mr-4" href="#">
+              <svg
+                class="w-4.5 h-4.5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="inline-block mr-4" href="#">
+              <svg
+                class="w-4.5 h-4.5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.25a1.25 1.25 0 0 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 4c-2.474 0-2.878.007-4.029.058-.784.037-1.31.142-1.798.332-.434.168-.747.369-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.006 9.075 4 9.461 4 12c0 2.474.007 2.878.058 4.029.037.783.142 1.31.331 1.797.17.435.37.748.702 1.08.337.336.65.537 1.08.703.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.474 0 2.878-.007 4.029-.058.782-.037 1.309-.142 1.797-.331.433-.169.748-.37 1.08-.702.337-.337.538-.65.704-1.08.19-.493.296-1.02.332-1.8.052-1.104.058-1.49.058-4.029 0-2.474-.007-2.878-.058-4.029-.037-.782-.142-1.31-.332-1.798a2.911 2.911 0 0 0-.703-1.08 2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.925 4.006 14.539 4 12 4zm0-2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <div class="copyright">
+          <p class="italic text-base leading-6 text-gray-400">
+            2021 Tokyo<br />Created by
+            <a
+              class="text-black"
+              href="https://www.instagram.com/dikaptrw"
+              target="_blank"
+              >Dikaptrw</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <!-- right section -->
+      <div class="right-section">
+        <!-- portfolio title -->
+        <div class="portfolio-title"></div>
+
+        <!-- home section -->
+        <div
+          id="home"
+          class="content__section active flex flex-col lg:flex-row justify-center items-center px-10 sm:px-17 md:px-28 lg:px-44 xl:px-17"
+        >
+          <div
+            class="mx__wd flex flex-col lg:flex-row justify-center items-center"
+          >
+            <div class="mb-7 lg:mb-0">
+              <div
+                class="avatar"
+                style="background-image: url(&quot;./img/avatar.png&quot;)"
+              ></div>
+            </div>
+
+            <div class="lg:ml-14 text-center lg:text-left">
+              <h3
+                class="name text-4.5xl md:text-5.5xl mb-3 uppercase font-extrabold"
+              >
+                Gavin <span>Ashley</span>
+              </h3>
+
+              <p
+                class="text-2sm md:text-base font-medium text-gray-500 italic leading-7"
+              >
+                Creative Photographer based in New York and happy to travel all
+                over Europe to capture photos.
+              </p>
+
+              <a
+                href="./cv/cv.pdf"
+                class="px-4.5 py-2.5 mt-6 text-sm font-medium focus:outline-none"
+              >
+                Download CV
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- about section -->
+        <div
+          id="about"
+          class="content__section px-8 sm:px-12 md:px-36 xl:px-20 py-15"
+        >
+          <div class="mx__wd">
+            <div
+              class="badge inline-block py-2 px-4 mb-4 uppercase text-2xs font-semibold"
+            >
+              About
+            </div>
+
+            <h1 class="title text-3xl font-extrabold text-gray-800 mb-8">
+              About Me
+            </h1>
+
+            <div class="flex flex-col lg:flex-row gap-20 pb-5 lg:pb-20">
+              <div class="pf-images w-full lg:w-1/2">
+                <a
+                  href="./img/avatar.png"
+                  class="open-lightbox"
+                  data-description="Gavin Ashley"
+                >
+                  <img
+                    class="w-full h-full object-cover"
+                    src="./img/avatar.png"
+                  />
+                </a>
+
+                <a
+                  class="image-sm open-lightbox"
+                  href="./img/avatar2.png"
+                  data-description="Gavin Ashley"
+                >
+                  <img
+                    class="w-full h-full object-cover"
+                    src="./img/avatar2.png"
+                  />
+                </a>
+              </div>
+
+              <div class="w-full lg:w-1/2">
+                <h2 class="name font-extrabold text-2xl mb-5">
+                  Hello, i'am <span>Gavin Ashley</span>
+                </h2>
+
+                <div class="description">
+                  <p class="text-gray-500 italic text-2base leading-8">
+                    Hello, I am a creative photographer based in New York and
+                    happy to travel all over Europe to capture your big day in
+                    candid and authentic photos. I will create a lasting memory
+                    of the people.
+                  </p>
+
+                  <ul class="mt-4">
+                    <li>
+                      <p>
+                        <span>Age</span>
+                        21
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <span>Address</span>
+                        Ave 11, New York, USA
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <span>Email</span>
+                        <a href="mailto:mail@gmail.com">mail@gmail.com</a>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <span>Phone</span>
+                        <a href="tel:+770221770505">+77 022 177 05 05</a>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <span>Study</span>
+                        ITB Stikom Bali
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <span>Freelance</span>
+                        <a href="#contact">Available</a>
+                      </p>
+                    </li>
+                  </ul>
+
+                  <button class="learn-more py-3 px-5 mt-7 focus:outline-none">
+                    Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- portofolio section -->
+        <div
+          id="portfolio"
+          class="content__section px-8 sm:px-8 md:px-10 lg:px-20 xl:px-10 py-15"
+        >
+          <div class="mx__wd">
+            <div
+              class="badge inline-block py-2 px-4 mb-4 uppercase text-2xs font-semibold"
+            >
+              Portfolio
+            </div>
+
+            <div
+              class="flex flex-col lg:flex-row justify-start lg:justify-between items-start lg:items-center"
+            >
+              <h1 class="title text-3xl font-extrabold text-gray-800">
+                Creative Portfolio
+              </h1>
+
+              <!-- menu -->
+              <ul class="menu flex flex-wrap mt-8 lg:mt-0">
+                <li>
+                  <a class="active" data-filter="*" href="#portfolio"> All </a>
+                </li>
+                <li>
+                  <a data-filter=".vimeo" href="#portfolio"> Vimeo </a>
+                </li>
+                <li>
+                  <a data-filter=".soundcloud" href="#portfolio">
+                    Sound Cloud
+                  </a>
+                </li>
+                <li>
+                  <a data-filter=".youtube" href="#portfolio"> Youtube </a>
+                </li>
+                <li>
+                  <a data-filter=".image" href="#portfolio"> Image </a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- portfolio content -->
+            <div class="list-wr portfolio">
+              <ul>
+                <li class="vimeo">
+                  <div class="list-inner">
+                    <div
+                      class="image-wr"
+                      data-title="Mari Patterson"
+                      data-category="Vimeo"
+                    >
+                      <a href="https://vimeo.com/107535695">
+                        <div
+                          class="image"
+                          style="
+                            background-image: url(&quot;./img/portfolio/5.jpg&quot;);
+                          "
+                        ></div>
+                        <div class="image-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                          >
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                              d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="youtube">
+                  <div class="list-inner">
+                    <div
+                      class="image-wr"
+                      data-title="Shana Wilcox"
+                      data-category="Youtube"
+                    >
+                      <a href="https://www.youtube.com/watch?v=0htiGVqI2N0">
+                        <div
+                          class="image"
+                          style="
+                            background-image: url(&quot;./img/portfolio/6.jpg&quot;);
+                          "
+                        ></div>
+                        <div class="image-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                          >
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                              d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="soundcloud">
+                  <div class="list-inner">
+                    <div
+                      class="image-wr"
+                      data-title="Shafira Mccray"
+                      data-category="Sound Cloud"
+                    >
+                      <a
+                        href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/835670797&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+                      >
+                        <div
+                          class="image"
+                          style="
+                            background-image: url(&quot;./img/portfolio/2.jpg&quot;);
+                          "
+                        ></div>
+                        <div class="image-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                          >
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                              d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="image">
+                  <div class="list-inner">
+                    <div
+                      class="image-wr"
+                      data-title="Kelly Compton"
+                      data-category="Image"
+                    >
+                      <a
+                        class="open-lightbox"
+                        data-description="Enjoy the little things."
+                        href="./img/portfolio/4.jpg"
+                      >
+                        <div
+                          class="image"
+                          style="
+                            background-image: url(&quot;./img/portfolio/4.jpg&quot;);
+                          "
+                        ></div>
+                        <div class="image-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                          >
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                              d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="youtube">
+                  <div class="list-inner">
+                    <div
+                      class="image-wr"
+                      data-title="Hanna Merrill"
+                      data-category="Youtube"
+                    >
+                      <a href="https://www.youtube.com/watch?v=yDyNTGMaU9Y">
+                        <div
+                          class="image"
+                          style="
+                            background-image: url(&quot;./img/portfolio/1.jpg&quot;);
+                          "
+                        ></div>
+                        <div class="image-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                          >
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                              d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="image">
+                  <div class="list-inner">
+                    <div
+                      class="image-wr"
+                      data-title="Carissa Hicks"
+                      data-category="Image"
+                    >
+                      <a
+                        class="open-lightbox"
+                        data-description="Throw kindness around like confetti."
+                        href="./img/portfolio/3.jpg"
+                      >
+                        <div
+                          class="image"
+                          style="
+                            background-image: url(&quot;./img/portfolio/3.jpg&quot;);
+                          "
+                        ></div>
+                        <div class="image-icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                          >
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                              d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"
+                            />
+                          </svg>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- news section -->
+        <div
+          id="news"
+          class="content__section px-8 sm:px-20 md:px-32 lg:px-20 xl:px-10 py-15"
+        >
+          <div class="mx__wd">
+            <div
+              class="badge inline-block py-2 px-4 mb-4 uppercase text-2xs font-semibold"
+            >
+              News
+            </div>
+
+            <div class="flex justify-between items-center">
+              <h1 class="title text-3xl font-extrabold text-gray-800">
+                Latest News
+              </h1>
+            </div>
+
+            <!-- content news -->
+            <div class="inline-block w-full mt-10">
+              <ul>
+                <li>
+                  <div class="list-inner">
+                    <a class="image-link" href="#news">
+                      <img class="image" src="./img/news/3.jpg" alt="" />
+                      <div class="image-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <path fill="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"
+                          />
+                        </svg>
+                      </div>
+                    </a>
+                    <div class="detail">
+                      <div class="extra border-b">
+                        <div class="desc">
+                          <p>
+                            By <a href="#">Alex Watson</a>
+
+                            <span>
+                              <span class="mx-1.5">/</span> 05 April 2021
+                            </span>
+                          </p>
+                        </div>
+                        <a href="#" class="flex items-center">
+                          <svg
+                            class="w-3 h-3 mt-0.5 mr-1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                          >
+                            <path
+                              d="M474.644 74.27C449.391 45.616 414.358 29.836 376 29.836c-53.948 0-88.103 32.22-107.255 59.25-4.969 7.014-9.196 14.047-12.745 20.665-3.549-6.618-7.775-13.651-12.745-20.665-19.152-27.03-53.307-59.25-107.255-59.25-38.358 0-73.391 15.781-98.645 44.435C13.267 101.605 0 138.213 0 177.351c0 42.603 16.633 82.228 52.345 124.7 31.917 37.96 77.834 77.088 131.005 122.397l62.115 53.429.655.574c2.828 2.476 6.354 3.713 9.88 3.713a14.97 14.97 0 0 0 9.88-3.713l.655-.574 62.118-53.431c53.168-45.306 99.085-84.434 131.002-122.395C495.367 259.578 512 219.954 512 177.351c0-39.138-13.267-75.746-37.356-103.081zM309.193 401.614L256 447.26l-53.196-45.648C98.745 312.939 30 254.358 30 177.351c0-31.83 10.605-61.394 29.862-83.245C79.34 72.007 106.379 59.836 136 59.836c41.129 0 67.716 25.338 82.776 46.594 13.509 19.064 20.558 38.282 22.962 45.659a15 15 0 0 0 28.524 0c2.404-7.377 9.453-26.595 22.962-45.66 15.06-21.255 41.647-46.593 82.776-46.593 29.621 0 56.66 12.171 76.137 34.27C471.395 115.957 482 145.521 482 177.351c0 77.007-68.745 135.588-172.807 224.263z"
+                            />
+                          </svg>
+                          <span>35</span>
                         </a>
-                    </div>
-                </div>
-            </div>
+                      </div>
 
-            <!-- about section -->
-            <div id="about" class="content__section px-8 sm:px-12 md:px-36 xl:px-20 py-15">
-                <div class="mx__wd">
-                    <div class="badge inline-block py-2 px-4 mb-4 uppercase text-2xs font-semibold">
-                        About
-                    </div>
+                      <h3 class="title">
+                        <a href="#news"
+                          >Format releases a new tool that enables direct video
+                          hosting</a
+                        >
+                      </h3>
 
-                    <h1 class="title text-3xl font-extrabold text-gray-800 mb-8">About Me</h1>
-                    
-                    <div class="flex flex-col lg:flex-row gap-20 pb-5 lg:pb-20">
-                        <div class="pf-images w-full lg:w-1/2">
-                            <a href="./img/avatar.png" class="open-lightbox" data-description="Gavin Ashley">
-                                <img class="w-full h-full object-cover" src="./img/avatar.png">
+                      <div class="read-more-btn">
+                        <a href="#news">
+                          <span>Read More</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="content">
+                      <div class="description">
+                        <span class="text-xl mt-6 leading-8 font-normal">
+                          Just because we can't get out and about like we
+                          normally would, doesn’t mean we have to stop taking
+                          pictures. There’s still plenty you can do, provided
+                          you're prepared to use some imagination. Here are a
+                          few ideas to keep you shooting until normal life
+                          resumes.
+                        </span>
+                        <p class="my-6">
+                          Most photographers love to shoot the unusual, and you
+                          don’t get much more unusual than These Unprecedented
+                          Times. Right now everything counts as out of the
+                          ordinary. There are a number of remarkable things
+                          about these lockdown days that are worth photographing
+                          now so we can remember them when it is all over.
+                        </p>
+                        <p class="mb-10">
+                          Streets empty that are usually busy are remarkable and
+                          can evoke the sense of historical pictures from before
+                          the invention of the motorcar. Other things that are
+                          different at the moment will be queues to get into
+                          stores and the lines marked out on the floor to show
+                          how far apart we should be.
+                        </p>
+
+                        <span class="quote">
+                          <h4 class="leading-8">
+                            Most photographers find it hard to see interesting
+                            pictures in places in which they are most familiar.
+                            A trip somewhere new seems always exactly what our
+                            photography needed, as shooting away from home
+                            consistently inspires us to new artistic heights.
+                          </h4>
+                        </span>
+
+                        <p class="mt-10 mb-6">
+                          Pretend everything is new and that you haven’t seen it
+                          before, and then you will be free to notice the
+                          leading lines, the places where one edge meets another
+                          in delightful geometric harmony, and how the ordinary
+                          things in the kitchen are transformed when the light
+                          is on or off.
+                        </p>
+
+                        <p>
+                          The trick here is to look slowly, and then look again.
+                          Take the time to look in detail and to look at the
+                          same thing from different angles, with different
+                          light, long lenses and wide lenses. Then move to the
+                          left a bit. You may never feel the need to leave the
+                          house again.
+                        </p>
+                      </div>
+
+                      <div class="flex mt-10 items-center">
+                        <span class="font-semibold mr-5 italic">Share :</span>
+                        <ul class="flex items-center">
+                          <li>
+                            <a
+                              class="w-10 h-10 flex items-center justify-center rounded-full border mr-2"
+                              href=""
+                            >
+                              <svg
+                                class="w-5 h-5"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                              >
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path
+                                  d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"
+                                />
+                              </svg>
                             </a>
-
-                            <a class="image-sm open-lightbox" href="./img/avatar2.png" data-description="Gavin Ashley">
-                                <img class="w-full h-full object-cover" src="./img/avatar2.png">
+                          </li>
+                          <li>
+                            <a
+                              class="w-10 h-10 flex items-center justify-center rounded-full border mr-2"
+                              href=""
+                            >
+                              <svg
+                                class="w-5 h-5"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                              >
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path
+                                  d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"
+                                />
+                              </svg>
                             </a>
-                        </div>
-    
-                        <div class="w-full lg:w-1/2">
-                            <h2 class="name font-extrabold text-2xl mb-5">Hello, i'am <span>Gavin Ashley</span></h2>
-    
-                            <div class="description">
-                                <p class="text-gray-500 italic text-2base leading-8">
-                                    Hello, I am a creative photographer based in New York and happy to travel all over Europe to capture your big day in candid and authentic photos. I will create a lasting memory of the people.
-                                </p>
-
-                                <ul class="mt-4 ">
-                                    <li>
-                                        <p>
-                                            <span>Age</span>
-                                            21
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span>Address</span>
-                                            Ave 11, New York, USA
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span>Email</span>
-                                            <a href="mailto:mail@gmail.com">mail@gmail.com</a>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span>Phone</span>
-                                            <a href="tel:+770221770505">+77 022 177 05 05</a>
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span>Study</span>
-                                            ITB Stikom Bali
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <span>Freelance</span>
-                                            <a href="#contact">Available</a>
-                                        </p>
-                                    </li>
-                                </ul>
-
-                                <button class="learn-more py-3 px-5 mt-7 focus:outline-none">
-                                    Learn More
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- portofolio section -->
-            <div id="portfolio" class="content__section px-8 sm:px-8 md:px-10 lg:px-20 xl:px-10 py-15">
-                <div class="mx__wd">
-                    <div class="badge inline-block py-2 px-4 mb-4 uppercase text-2xs font-semibold">
-                        Portfolio
-                    </div>
-    
-                    <div class="flex flex-col lg:flex-row justify-start lg:justify-between items-start lg:items-center">
-                        <h1 class="title text-3xl font-extrabold text-gray-800">Creative Portfolio</h1>
-    
-                        <!-- menu -->
-                        <ul class="menu flex flex-wrap mt-8 lg:mt-0">
-                            <li>
-                                <a class="active" data-filter="*" href="#portfolio">
-                                    All
-                                </a>
-                            </li>
-                            <li>
-                                <a data-filter=".vimeo" href="#portfolio">
-                                    Vimeo
-                                </a>
-                            </li>
-                            <li>
-                                <a data-filter=".soundcloud" href="#portfolio">
-                                    Sound Cloud
-                                </a>
-                            </li>
-                            <li>
-                                <a data-filter=".youtube" href="#portfolio">
-                                    Youtube
-                                </a>
-                            </li>
-                            <li>
-                                <a data-filter=".image" href="#portfolio">
-                                    Image
-                                </a>
-                            </li>
+                          </li>
+                          <li>
+                            <a
+                              class="w-10 h-10 flex items-center justify-center rounded-full border"
+                              href=""
+                            >
+                              <svg
+                                class="w-5 h-5"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                              >
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path
+                                  d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"
+                                />
+                              </svg>
+                            </a>
+                          </li>
                         </ul>
+                      </div>
                     </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-inner">
+                    <a class="image-link" href="#news">
+                      <img class="image" src="./img/news/2.jpg" alt="" />
+                      <div class="image-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <path fill="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"
+                          />
+                        </svg>
+                      </div>
+                    </a>
+                    <div class="detail">
+                      <div class="extra border-b">
+                        <div class="desc">
+                          <p>
+                            By <a href="#">Alex Watson</a>
+                            <span class="mx-1.5">/</span>
+                            <span> 05 April 2021</span>
+                          </p>
+                        </div>
+                        <a href="#" class="flex items-center">
+                          <svg
+                            class="w-3 h-3 mt-0.5 mr-1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                          >
+                            <path
+                              d="M474.644 74.27C449.391 45.616 414.358 29.836 376 29.836c-53.948 0-88.103 32.22-107.255 59.25-4.969 7.014-9.196 14.047-12.745 20.665-3.549-6.618-7.775-13.651-12.745-20.665-19.152-27.03-53.307-59.25-107.255-59.25-38.358 0-73.391 15.781-98.645 44.435C13.267 101.605 0 138.213 0 177.351c0 42.603 16.633 82.228 52.345 124.7 31.917 37.96 77.834 77.088 131.005 122.397l62.115 53.429.655.574c2.828 2.476 6.354 3.713 9.88 3.713a14.97 14.97 0 0 0 9.88-3.713l.655-.574 62.118-53.431c53.168-45.306 99.085-84.434 131.002-122.395C495.367 259.578 512 219.954 512 177.351c0-39.138-13.267-75.746-37.356-103.081zM309.193 401.614L256 447.26l-53.196-45.648C98.745 312.939 30 254.358 30 177.351c0-31.83 10.605-61.394 29.862-83.245C79.34 72.007 106.379 59.836 136 59.836c41.129 0 67.716 25.338 82.776 46.594 13.509 19.064 20.558 38.282 22.962 45.659a15 15 0 0 0 28.524 0c2.404-7.377 9.453-26.595 22.962-45.66 15.06-21.255 41.647-46.593 82.776-46.593 29.621 0 56.66 12.171 76.137 34.27C471.395 115.957 482 145.521 482 177.351c0 77.007-68.745 135.588-172.807 224.263z"
+                            />
+                          </svg>
+                          <span>35</span>
+                        </a>
+                      </div>
 
-                    <!-- portfolio content -->
-                    <div class="list-wr portfolio">
-                        <ul>
-                            <li class="vimeo">
-                                <div class="list-inner">
-                                    <div class="image-wr" data-title="Mari Patterson" data-category="Vimeo">
-                                        <a href="https://vimeo.com/107535695">
-                                            <div class="image" style="background-image: url('./img/portfolio/5.jpg');"></div>
-                                            <div class="image-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path fill="none" d="M0 0h24v24H0z"/><path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"/>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="youtube">
-                                <div class="list-inner">
-                                    <div class="image-wr" data-title="Shana Wilcox" data-category="Youtube">
-                                        <a href="https://www.youtube.com/watch?v=0htiGVqI2N0">
-                                            <div class="image" style="background-image: url('./img/portfolio/6.jpg');"></div>
-                                            <div class="image-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path fill="none" d="M0 0h24v24H0z"/><path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"/>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="soundcloud">
-                                <div class="list-inner">
-                                    <div class="image-wr" data-title="Shafira Mccray" data-category="Sound Cloud">
-                                        <a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/835670797&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
-                                            <div class="image" style="background-image: url('./img/portfolio/2.jpg');"></div>
-                                            <div class="image-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path fill="none" d="M0 0h24v24H0z"/><path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"/>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="image">
-                                <div class="list-inner">
-                                    <div class="image-wr" data-title="Kelly Compton" data-category="Image">
-                                        <a class="open-lightbox" data-description="Enjoy the little things." href="./img/portfolio/4.jpg">
-                                            <div class="image" style="background-image: url('./img/portfolio/4.jpg');"></div>
-                                            <div class="image-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path fill="none" d="M0 0h24v24H0z"/><path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"/>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="youtube">
-                                <div class="list-inner">
-                                    <div class="image-wr" data-title="Hanna Merrill" data-category="Youtube">
-                                        <a href="https://www.youtube.com/watch?v=yDyNTGMaU9Y">
-                                            <div class="image" style="background-image: url('./img/portfolio/1.jpg');"></div>
-                                            <div class="image-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path fill="none" d="M0 0h24v24H0z"/><path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"/>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="image">
-                                <div class="list-inner">
-                                    <div class="image-wr" data-title="Carissa Hicks" data-category="Image">
-                                        <a class="open-lightbox" data-description="Throw kindness around like confetti." href="./img/portfolio/3.jpg">
-                                            <div class="image" style="background-image: url('./img/portfolio/3.jpg');"></div>
-                                            <div class="image-icon">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                                    <path fill="none" d="M0 0h24v24H0z"/><path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"/>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
+                      <h3 class="title">
+                        <a href="#news"
+                          >Format releases a new tool that enables direct video
+                          hosting</a
+                        >
+                      </h3>
+
+                      <div class="read-more-btn">
+                        <a href="#news">
+                          <span>Read More</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="content">
+                      <div class="description">
+                        <span class="text-xl mt-6 leading-8 font-normal">
+                          Just because we can't get out and about like we
+                          normally would, doesn’t mean we have to stop taking
+                          pictures. There’s still plenty you can do, provided
+                          you're prepared to use some imagination. Here are a
+                          few ideas to keep you shooting until normal life
+                          resumes.
+                        </span>
+                        <p class="my-6">
+                          Most photographers love to shoot the unusual, and you
+                          don’t get much more unusual than These Unprecedented
+                          Times. Right now everything counts as out of the
+                          ordinary. There are a number of remarkable things
+                          about these lockdown days that are worth photographing
+                          now so we can remember them when it is all over.
+                        </p>
+                        <p class="mb-10">
+                          Streets empty that are usually busy are remarkable and
+                          can evoke the sense of historical pictures from before
+                          the invention of the motorcar. Other things that are
+                          different at the moment will be queues to get into
+                          stores and the lines marked out on the floor to show
+                          how far apart we should be.
+                        </p>
+
+                        <span class="quote">
+                          <h4 class="leading-8">
+                            Most photographers find it hard to see interesting
+                            pictures in places in which they are most familiar.
+                            A trip somewhere new seems always exactly what our
+                            photography needed, as shooting away from home
+                            consistently inspires us to new artistic heights.
+                          </h4>
+                        </span>
+
+                        <p class="mt-10 mb-6">
+                          Pretend everything is new and that you haven’t seen it
+                          before, and then you will be free to notice the
+                          leading lines, the places where one edge meets another
+                          in delightful geometric harmony, and how the ordinary
+                          things in the kitchen are transformed when the light
+                          is on or off.
+                        </p>
+
+                        <p>
+                          The trick here is to look slowly, and then look again.
+                          Take the time to look in detail and to look at the
+                          same thing from different angles, with different
+                          light, long lenses and wide lenses. Then move to the
+                          left a bit. You may never feel the need to leave the
+                          house again.
+                        </p>
+                      </div>
+
+                      <div class="flex mt-10 items-center">
+                        <span class="font-semibold mr-5 italic">Share :</span>
+                        <ul class="flex items-center">
+                          <li>
+                            <a
+                              class="w-10 h-10 flex items-center justify-center rounded-full border mr-2"
+                              href=""
+                            >
+                              <svg
+                                class="w-5 h-5"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                              >
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path
+                                  d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"
+                                />
+                              </svg>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="w-10 h-10 flex items-center justify-center rounded-full border mr-2"
+                              href=""
+                            >
+                              <svg
+                                class="w-5 h-5"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                              >
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path
+                                  d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"
+                                />
+                              </svg>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="w-10 h-10 flex items-center justify-center rounded-full border"
+                              href=""
+                            >
+                              <svg
+                                class="w-5 h-5"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                              >
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path
+                                  d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"
+                                />
+                              </svg>
+                            </a>
+                          </li>
                         </ul>
+                      </div>
                     </div>
-                </div>
-            </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-inner">
+                    <a class="image-link" href="#news">
+                      <img class="image" src="./img/news/1.jpg" alt="" />
+                      <div class="image-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <path fill="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"
+                          />
+                        </svg>
+                      </div>
+                    </a>
+                    <div class="detail">
+                      <div class="extra border-b">
+                        <div class="desc">
+                          <p>
+                            By <a href="#">Alex Watson</a>
+                            <span class="mx-1.5">/</span>
+                            <span> 05 April 2021</span>
+                          </p>
+                        </div>
+                        <a href="#" class="flex items-center">
+                          <svg
+                            class="w-3 h-3 mt-0.5 mr-1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                          >
+                            <path
+                              d="M474.644 74.27C449.391 45.616 414.358 29.836 376 29.836c-53.948 0-88.103 32.22-107.255 59.25-4.969 7.014-9.196 14.047-12.745 20.665-3.549-6.618-7.775-13.651-12.745-20.665-19.152-27.03-53.307-59.25-107.255-59.25-38.358 0-73.391 15.781-98.645 44.435C13.267 101.605 0 138.213 0 177.351c0 42.603 16.633 82.228 52.345 124.7 31.917 37.96 77.834 77.088 131.005 122.397l62.115 53.429.655.574c2.828 2.476 6.354 3.713 9.88 3.713a14.97 14.97 0 0 0 9.88-3.713l.655-.574 62.118-53.431c53.168-45.306 99.085-84.434 131.002-122.395C495.367 259.578 512 219.954 512 177.351c0-39.138-13.267-75.746-37.356-103.081zM309.193 401.614L256 447.26l-53.196-45.648C98.745 312.939 30 254.358 30 177.351c0-31.83 10.605-61.394 29.862-83.245C79.34 72.007 106.379 59.836 136 59.836c41.129 0 67.716 25.338 82.776 46.594 13.509 19.064 20.558 38.282 22.962 45.659a15 15 0 0 0 28.524 0c2.404-7.377 9.453-26.595 22.962-45.66 15.06-21.255 41.647-46.593 82.776-46.593 29.621 0 56.66 12.171 76.137 34.27C471.395 115.957 482 145.521 482 177.351c0 77.007-68.745 135.588-172.807 224.263z"
+                            />
+                          </svg>
+                          <span>35</span>
+                        </a>
+                      </div>
 
-            <!-- news section -->
-            <div id="news" class="content__section px-8 sm:px-20 md:px-32 lg:px-20 xl:px-10 py-15">
-                <div class="mx__wd">
-                    <div class="badge inline-block py-2 px-4 mb-4 uppercase text-2xs font-semibold">
-                        News
+                      <h3 class="title">
+                        <a href="#news"
+                          >Format releases a new tool that enables direct video
+                          hosting</a
+                        >
+                      </h3>
+
+                      <div class="read-more-btn">
+                        <a href="#news">
+                          <span>Read More</span>
+                        </a>
+                      </div>
                     </div>
-    
-                    <div class="flex justify-between items-center">
-                        <h1 class="title text-3xl font-extrabold text-gray-800">Latest News</h1>
-                    </div>
-    
-                    <!-- content news -->
-                    <div class="inline-block w-full mt-10">
-                        <ul>
-                            <li>
-                                <div class="list-inner">
-                                    <a class="image-link" href="#news">
-                                        <img class="image" src="./img/news/3.jpg" alt="">
-                                        <div class="image-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                                <path fill="none" d="M0 0h24v24H0z"/><path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"/>
-                                            </svg>
-                                        </div>
-                                    </a>
-                                    <div class="detail">
-                                        <div class="extra border-b">
-                                            <div class="desc">
-                                                <p>
-                                                    By <a href="#">Alex Watson</a>
-                                                    
-                                                    <span>
-                                                        <span class="mx-1.5">/</span> 05 April 2021
-                                                    </span>
-                                                </p>
-                                            </div>
-                                            <a href="#" class="flex items-center">
-                                                <svg class="w-3 h-3 mt-0.5 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="M474.644 74.27C449.391 45.616 414.358 29.836 376 29.836c-53.948 0-88.103 32.22-107.255 59.25-4.969 7.014-9.196 14.047-12.745 20.665-3.549-6.618-7.775-13.651-12.745-20.665-19.152-27.03-53.307-59.25-107.255-59.25-38.358 0-73.391 15.781-98.645 44.435C13.267 101.605 0 138.213 0 177.351c0 42.603 16.633 82.228 52.345 124.7 31.917 37.96 77.834 77.088 131.005 122.397l62.115 53.429.655.574c2.828 2.476 6.354 3.713 9.88 3.713a14.97 14.97 0 0 0 9.88-3.713l.655-.574 62.118-53.431c53.168-45.306 99.085-84.434 131.002-122.395C495.367 259.578 512 219.954 512 177.351c0-39.138-13.267-75.746-37.356-103.081zM309.193 401.614L256 447.26l-53.196-45.648C98.745 312.939 30 254.358 30 177.351c0-31.83 10.605-61.394 29.862-83.245C79.34 72.007 106.379 59.836 136 59.836c41.129 0 67.716 25.338 82.776 46.594 13.509 19.064 20.558 38.282 22.962 45.659a15 15 0 0 0 28.524 0c2.404-7.377 9.453-26.595 22.962-45.66 15.06-21.255 41.647-46.593 82.776-46.593 29.621 0 56.66 12.171 76.137 34.27C471.395 115.957 482 145.521 482 177.351c0 77.007-68.745 135.588-172.807 224.263z"/>
-                                                </svg>
-                                                <span>35</span>
-                                            </a>
-                                        </div>
+                    <div class="content">
+                      <div class="description">
+                        <span class="text-xl mt-6 leading-8 font-normal">
+                          Just because we can't get out and about like we
+                          normally would, doesn’t mean we have to stop taking
+                          pictures. There’s still plenty you can do, provided
+                          you're prepared to use some imagination. Here are a
+                          few ideas to keep you shooting until normal life
+                          resumes.
+                        </span>
+                        <p class="my-6">
+                          Most photographers love to shoot the unusual, and you
+                          don’t get much more unusual than These Unprecedented
+                          Times. Right now everything counts as out of the
+                          ordinary. There are a number of remarkable things
+                          about these lockdown days that are worth photographing
+                          now so we can remember them when it is all over.
+                        </p>
+                        <p class="mb-10">
+                          Streets empty that are usually busy are remarkable and
+                          can evoke the sense of historical pictures from before
+                          the invention of the motorcar. Other things that are
+                          different at the moment will be queues to get into
+                          stores and the lines marked out on the floor to show
+                          how far apart we should be.
+                        </p>
 
-                                        <h3 class="title">
-                                            <a href="#news">Format releases a new tool that enables direct video hosting</a>
-                                        </h3>
-        
-                                        <div class="read-more-btn">
-                                            <a href="#news">
-                                                <span>Read More</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="content">
-                                        <div class="description">
-                                            <span class="text-xl mt-6 leading-8 font-normal">
-                                                Just because we can't get out and about like we normally would, doesn’t mean we have to stop taking pictures. There’s still plenty you can do, provided you're prepared to use some imagination. Here are a few ideas to keep you shooting until normal life resumes.
-                                            </span>
-                                            <p class="my-6">
-                                                Most photographers love to shoot the unusual, and you don’t get much more unusual than These Unprecedented Times. Right now everything counts as out of the ordinary. There are a number of remarkable things about these lockdown days that are worth photographing now so we can remember them when it is all over.
-                                            </p>
-                                            <p class="mb-10">
-                                                Streets empty that are usually busy are remarkable and can evoke the sense of historical pictures from before the invention of the motorcar. Other things that are different at the moment will be queues to get into stores and the lines marked out on the floor to show how far apart we should be.
-                                            </p>
-                    
-                                            <span class="quote">
-                                                <h4 class="leading-8">
-                                                    Most photographers find it hard to see interesting pictures in places in which they are most familiar. A trip somewhere new seems always exactly what our photography needed, as shooting away from home consistently inspires us to new artistic heights.
-                                                </h4>
-                                            </span>
-                    
-                                            <p class="mt-10 mb-6">
-                                                Pretend everything is new and that you haven’t seen it before, and then you will be free to notice the leading lines, the places where one edge meets another in delightful geometric harmony, and how the ordinary things in the kitchen are transformed when the light is on or off.
-                                            </p>
-                    
-                                            <p>
-                                                The trick here is to look slowly, and then look again. Take the time to look in detail and to look at the same thing from different angles, with different light, long lenses and wide lenses. Then move to the left a bit. You may never feel the need to leave the house again.
-                                            </p>
-                                        </div>
-                
-                                        <div class="flex mt-10 items-center">
-                                            <span class="font-semibold mr-5 italic">Share :</span>
-                                            <ul class="flex items-center">
-                                                <li>
-                                                    <a class="w-10 h-10 flex items-center justify-center rounded-full border mr-2" href="">
-                                                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/></svg>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="w-10 h-10 flex items-center justify-center rounded-full border mr-2" href="">
-                                                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"/></svg>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="w-10 h-10 flex items-center justify-center rounded-full border" href="">
-                                                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"/></svg>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="list-inner">
-                                    <a class="image-link" href="#news">
-                                        <img class="image" src="./img/news/2.jpg" alt="">
-                                        <div class="image-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                                <path fill="none" d="M0 0h24v24H0z"/><path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"/>
-                                            </svg>
-                                        </div>
-                                    </a>
-                                    <div class="detail">
-                                        <div class="extra border-b">
-                                            <div class="desc">
-                                                <p>
-                                                    By <a href="#">Alex Watson</a>
-                                                    <span class="mx-1.5">/</span>
-                                                    <span> 05 April 2021</span>
-                                                </p>
-                                            </div>
-                                            <a href="#" class="flex items-center">
-                                                <svg class="w-3 h-3 mt-0.5 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="M474.644 74.27C449.391 45.616 414.358 29.836 376 29.836c-53.948 0-88.103 32.22-107.255 59.25-4.969 7.014-9.196 14.047-12.745 20.665-3.549-6.618-7.775-13.651-12.745-20.665-19.152-27.03-53.307-59.25-107.255-59.25-38.358 0-73.391 15.781-98.645 44.435C13.267 101.605 0 138.213 0 177.351c0 42.603 16.633 82.228 52.345 124.7 31.917 37.96 77.834 77.088 131.005 122.397l62.115 53.429.655.574c2.828 2.476 6.354 3.713 9.88 3.713a14.97 14.97 0 0 0 9.88-3.713l.655-.574 62.118-53.431c53.168-45.306 99.085-84.434 131.002-122.395C495.367 259.578 512 219.954 512 177.351c0-39.138-13.267-75.746-37.356-103.081zM309.193 401.614L256 447.26l-53.196-45.648C98.745 312.939 30 254.358 30 177.351c0-31.83 10.605-61.394 29.862-83.245C79.34 72.007 106.379 59.836 136 59.836c41.129 0 67.716 25.338 82.776 46.594 13.509 19.064 20.558 38.282 22.962 45.659a15 15 0 0 0 28.524 0c2.404-7.377 9.453-26.595 22.962-45.66 15.06-21.255 41.647-46.593 82.776-46.593 29.621 0 56.66 12.171 76.137 34.27C471.395 115.957 482 145.521 482 177.351c0 77.007-68.745 135.588-172.807 224.263z"/>
-                                                </svg>
-                                                <span>35</span>
-                                            </a>
-                                        </div>
+                        <span class="quote">
+                          <h4 class="leading-8">
+                            Most photographers find it hard to see interesting
+                            pictures in places in which they are most familiar.
+                            A trip somewhere new seems always exactly what our
+                            photography needed, as shooting away from home
+                            consistently inspires us to new artistic heights.
+                          </h4>
+                        </span>
 
-                                        <h3 class="title">
-                                            <a href="#news">Format releases a new tool that enables direct video hosting</a>
-                                        </h3>
-        
-                                        <div class="read-more-btn">
-                                            <a href="#news">
-                                                <span>Read More</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="content">
-                                        <div class="description">
-                                            <span class="text-xl mt-6 leading-8 font-normal">
-                                                Just because we can't get out and about like we normally would, doesn’t mean we have to stop taking pictures. There’s still plenty you can do, provided you're prepared to use some imagination. Here are a few ideas to keep you shooting until normal life resumes.
-                                            </span>
-                                            <p class="my-6">
-                                                Most photographers love to shoot the unusual, and you don’t get much more unusual than These Unprecedented Times. Right now everything counts as out of the ordinary. There are a number of remarkable things about these lockdown days that are worth photographing now so we can remember them when it is all over.
-                                            </p>
-                                            <p class="mb-10">
-                                                Streets empty that are usually busy are remarkable and can evoke the sense of historical pictures from before the invention of the motorcar. Other things that are different at the moment will be queues to get into stores and the lines marked out on the floor to show how far apart we should be.
-                                            </p>
-                    
-                                            <span class="quote">
-                                                <h4 class="leading-8">
-                                                    Most photographers find it hard to see interesting pictures in places in which they are most familiar. A trip somewhere new seems always exactly what our photography needed, as shooting away from home consistently inspires us to new artistic heights.
-                                                </h4>
-                                            </span>
-                    
-                                            <p class="mt-10 mb-6">
-                                                Pretend everything is new and that you haven’t seen it before, and then you will be free to notice the leading lines, the places where one edge meets another in delightful geometric harmony, and how the ordinary things in the kitchen are transformed when the light is on or off.
-                                            </p>
-                    
-                                            <p>
-                                                The trick here is to look slowly, and then look again. Take the time to look in detail and to look at the same thing from different angles, with different light, long lenses and wide lenses. Then move to the left a bit. You may never feel the need to leave the house again.
-                                            </p>
-                                        </div>
-                
-                                        <div class="flex mt-10 items-center">
-                                            <span class="font-semibold mr-5 italic">Share :</span>
-                                            <ul class="flex items-center">
-                                                <li>
-                                                    <a class="w-10 h-10 flex items-center justify-center rounded-full border mr-2" href="">
-                                                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/></svg>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="w-10 h-10 flex items-center justify-center rounded-full border mr-2" href="">
-                                                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"/></svg>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="w-10 h-10 flex items-center justify-center rounded-full border" href="">
-                                                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"/></svg>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="list-inner">
-                                    <a class="image-link" href="#news">
-                                        <img class="image" src="./img/news/1.jpg" alt="">
-                                        <div class="image-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                                <path fill="none" d="M0 0h24v24H0z"/><path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"/>
-                                            </svg>
-                                        </div>
-                                    </a>
-                                    <div class="detail">
-                                        <div class="extra border-b">
-                                            <div class="desc">
-                                                <p>
-                                                    By <a href="#">Alex Watson</a>
-                                                    <span class="mx-1.5">/</span>
-                                                    <span> 05 April 2021</span>
-                                                </p>
-                                            </div>
-                                            <a href="#" class="flex items-center">
-                                                <svg class="w-3 h-3 mt-0.5 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="M474.644 74.27C449.391 45.616 414.358 29.836 376 29.836c-53.948 0-88.103 32.22-107.255 59.25-4.969 7.014-9.196 14.047-12.745 20.665-3.549-6.618-7.775-13.651-12.745-20.665-19.152-27.03-53.307-59.25-107.255-59.25-38.358 0-73.391 15.781-98.645 44.435C13.267 101.605 0 138.213 0 177.351c0 42.603 16.633 82.228 52.345 124.7 31.917 37.96 77.834 77.088 131.005 122.397l62.115 53.429.655.574c2.828 2.476 6.354 3.713 9.88 3.713a14.97 14.97 0 0 0 9.88-3.713l.655-.574 62.118-53.431c53.168-45.306 99.085-84.434 131.002-122.395C495.367 259.578 512 219.954 512 177.351c0-39.138-13.267-75.746-37.356-103.081zM309.193 401.614L256 447.26l-53.196-45.648C98.745 312.939 30 254.358 30 177.351c0-31.83 10.605-61.394 29.862-83.245C79.34 72.007 106.379 59.836 136 59.836c41.129 0 67.716 25.338 82.776 46.594 13.509 19.064 20.558 38.282 22.962 45.659a15 15 0 0 0 28.524 0c2.404-7.377 9.453-26.595 22.962-45.66 15.06-21.255 41.647-46.593 82.776-46.593 29.621 0 56.66 12.171 76.137 34.27C471.395 115.957 482 145.521 482 177.351c0 77.007-68.745 135.588-172.807 224.263z"/>
-                                                </svg>
-                                                <span>35</span>
-                                            </a>
-                                        </div>
+                        <p class="mt-10 mb-6">
+                          Pretend everything is new and that you haven’t seen it
+                          before, and then you will be free to notice the
+                          leading lines, the places where one edge meets another
+                          in delightful geometric harmony, and how the ordinary
+                          things in the kitchen are transformed when the light
+                          is on or off.
+                        </p>
 
-                                        <h3 class="title">
-                                            <a href="#news">Format releases a new tool that enables direct video hosting</a>
-                                        </h3>
-        
-                                        <div class="read-more-btn">
-                                            <a href="#news">
-                                                <span>Read More</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="content">
-                                        <div class="description">
-                                            <span class="text-xl mt-6 leading-8 font-normal">
-                                                Just because we can't get out and about like we normally would, doesn’t mean we have to stop taking pictures. There’s still plenty you can do, provided you're prepared to use some imagination. Here are a few ideas to keep you shooting until normal life resumes.
-                                            </span>
-                                            <p class="my-6">
-                                                Most photographers love to shoot the unusual, and you don’t get much more unusual than These Unprecedented Times. Right now everything counts as out of the ordinary. There are a number of remarkable things about these lockdown days that are worth photographing now so we can remember them when it is all over.
-                                            </p>
-                                            <p class="mb-10">
-                                                Streets empty that are usually busy are remarkable and can evoke the sense of historical pictures from before the invention of the motorcar. Other things that are different at the moment will be queues to get into stores and the lines marked out on the floor to show how far apart we should be.
-                                            </p>
-                    
-                                            <span class="quote">
-                                                <h4 class="leading-8">
-                                                    Most photographers find it hard to see interesting pictures in places in which they are most familiar. A trip somewhere new seems always exactly what our photography needed, as shooting away from home consistently inspires us to new artistic heights.
-                                                </h4>
-                                            </span>
-                    
-                                            <p class="mt-10 mb-6">
-                                                Pretend everything is new and that you haven’t seen it before, and then you will be free to notice the leading lines, the places where one edge meets another in delightful geometric harmony, and how the ordinary things in the kitchen are transformed when the light is on or off.
-                                            </p>
-                    
-                                            <p>
-                                                The trick here is to look slowly, and then look again. Take the time to look in detail and to look at the same thing from different angles, with different light, long lenses and wide lenses. Then move to the left a bit. You may never feel the need to leave the house again.
-                                            </p>
-                                        </div>
-                
-                                        <div class="flex mt-10 items-center">
-                                            <span class="font-semibold mr-5 italic">Share :</span>
-                                            <ul class="flex items-center">
-                                                <li>
-                                                    <a class="w-10 h-10 flex items-center justify-center rounded-full border mr-2" href="">
-                                                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/></svg>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="w-10 h-10 flex items-center justify-center rounded-full border mr-2" href="">
-                                                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"/></svg>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="w-10 h-10 flex items-center justify-center rounded-full border" href="">
-                                                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"/></svg>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="list-inner">
-                                    <a class="image-link" href="#news">
-                                        <img class="image" src="./img/news/4.jpg" alt="">
-                                        <div class="image-icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                                <path fill="none" d="M0 0h24v24H0z"/><path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"/>
-                                            </svg>
-                                        </div>
-                                    </a>
-                                    <div class="detail">
-                                        <div class="extra border-b">
-                                            <div class="desc">
-                                                <p>
-                                                    By <a href="#">Alex Watson</a>
-                                                    <span class="mx-1.5">/</span>
-                                                    <span> 05 April 2021</span>
-                                                </p>
-                                            </div>
-                                            <a href="#" class="flex items-center">
-                                                <svg class="w-3 h-3 mt-0.5 mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="M474.644 74.27C449.391 45.616 414.358 29.836 376 29.836c-53.948 0-88.103 32.22-107.255 59.25-4.969 7.014-9.196 14.047-12.745 20.665-3.549-6.618-7.775-13.651-12.745-20.665-19.152-27.03-53.307-59.25-107.255-59.25-38.358 0-73.391 15.781-98.645 44.435C13.267 101.605 0 138.213 0 177.351c0 42.603 16.633 82.228 52.345 124.7 31.917 37.96 77.834 77.088 131.005 122.397l62.115 53.429.655.574c2.828 2.476 6.354 3.713 9.88 3.713a14.97 14.97 0 0 0 9.88-3.713l.655-.574 62.118-53.431c53.168-45.306 99.085-84.434 131.002-122.395C495.367 259.578 512 219.954 512 177.351c0-39.138-13.267-75.746-37.356-103.081zM309.193 401.614L256 447.26l-53.196-45.648C98.745 312.939 30 254.358 30 177.351c0-31.83 10.605-61.394 29.862-83.245C79.34 72.007 106.379 59.836 136 59.836c41.129 0 67.716 25.338 82.776 46.594 13.509 19.064 20.558 38.282 22.962 45.659a15 15 0 0 0 28.524 0c2.404-7.377 9.453-26.595 22.962-45.66 15.06-21.255 41.647-46.593 82.776-46.593 29.621 0 56.66 12.171 76.137 34.27C471.395 115.957 482 145.521 482 177.351c0 77.007-68.745 135.588-172.807 224.263z"/>
-                                                </svg>
-                                                <span>35</span>
-                                            </a>
-                                        </div>
+                        <p>
+                          The trick here is to look slowly, and then look again.
+                          Take the time to look in detail and to look at the
+                          same thing from different angles, with different
+                          light, long lenses and wide lenses. Then move to the
+                          left a bit. You may never feel the need to leave the
+                          house again.
+                        </p>
+                      </div>
 
-                                        <h3 class="title">
-                                            <a href="#news">Format releases a new tool that enables direct video hosting</a>
-                                        </h3>
-        
-                                        <div class="read-more-btn">
-                                            <a href="#news">
-                                                <span>Read More</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="content">
-                                        <div class="description">
-                                            <span class="text-xl mt-6 leading-8 font-normal">
-                                                Just because we can't get out and about like we normally would, doesn’t mean we have to stop taking pictures. There’s still plenty you can do, provided you're prepared to use some imagination. Here are a few ideas to keep you shooting until normal life resumes.
-                                            </span>
-                                            <p class="my-6">
-                                                Most photographers love to shoot the unusual, and you don’t get much more unusual than These Unprecedented Times. Right now everything counts as out of the ordinary. There are a number of remarkable things about these lockdown days that are worth photographing now so we can remember them when it is all over.
-                                            </p>
-                                            <p class="mb-10">
-                                                Streets empty that are usually busy are remarkable and can evoke the sense of historical pictures from before the invention of the motorcar. Other things that are different at the moment will be queues to get into stores and the lines marked out on the floor to show how far apart we should be.
-                                            </p>
-                    
-                                            <span class="quote">
-                                                <h4 class="leading-8">
-                                                    Most photographers find it hard to see interesting pictures in places in which they are most familiar. A trip somewhere new seems always exactly what our photography needed, as shooting away from home consistently inspires us to new artistic heights.
-                                                </h4>
-                                            </span>
-                    
-                                            <p class="mt-10 mb-6">
-                                                Pretend everything is new and that you haven’t seen it before, and then you will be free to notice the leading lines, the places where one edge meets another in delightful geometric harmony, and how the ordinary things in the kitchen are transformed when the light is on or off.
-                                            </p>
-                    
-                                            <p>
-                                                The trick here is to look slowly, and then look again. Take the time to look in detail and to look at the same thing from different angles, with different light, long lenses and wide lenses. Then move to the left a bit. You may never feel the need to leave the house again.
-                                            </p>
-                                        </div>
-                
-                                        <div class="flex mt-10 items-center">
-                                            <span class="font-semibold mr-5 italic">Share :</span>
-                                            <ul class="flex items-center">
-                                                <li>
-                                                    <a class="w-10 h-10 flex items-center justify-center rounded-full border mr-2" href="">
-                                                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"/></svg>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="w-10 h-10 flex items-center justify-center rounded-full border mr-2" href="">
-                                                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"/></svg>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="w-10 h-10 flex items-center justify-center rounded-full border" href="">
-                                                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0z"/><path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"/></svg>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
+                      <div class="flex mt-10 items-center">
+                        <span class="font-semibold mr-5 italic">Share :</span>
+                        <ul class="flex items-center">
+                          <li>
+                            <a
+                              class="w-10 h-10 flex items-center justify-center rounded-full border mr-2"
+                              href=""
+                            >
+                              <svg
+                                class="w-5 h-5"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                              >
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path
+                                  d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"
+                                />
+                              </svg>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="w-10 h-10 flex items-center justify-center rounded-full border mr-2"
+                              href=""
+                            >
+                              <svg
+                                class="w-5 h-5"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                              >
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path
+                                  d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"
+                                />
+                              </svg>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="w-10 h-10 flex items-center justify-center rounded-full border"
+                              href=""
+                            >
+                              <svg
+                                class="w-5 h-5"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                              >
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path
+                                  d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"
+                                />
+                              </svg>
+                            </a>
+                          </li>
                         </ul>
+                      </div>
                     </div>
-                </div>
-            </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-inner">
+                    <a class="image-link" href="#news">
+                      <img class="image" src="./img/news/4.jpg" alt="" />
+                      <div class="image-icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                        >
+                          <path fill="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"
+                          />
+                        </svg>
+                      </div>
+                    </a>
+                    <div class="detail">
+                      <div class="extra border-b">
+                        <div class="desc">
+                          <p>
+                            By <a href="#">Alex Watson</a>
+                            <span class="mx-1.5">/</span>
+                            <span> 05 April 2021</span>
+                          </p>
+                        </div>
+                        <a href="#" class="flex items-center">
+                          <svg
+                            class="w-3 h-3 mt-0.5 mr-1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                          >
+                            <path
+                              d="M474.644 74.27C449.391 45.616 414.358 29.836 376 29.836c-53.948 0-88.103 32.22-107.255 59.25-4.969 7.014-9.196 14.047-12.745 20.665-3.549-6.618-7.775-13.651-12.745-20.665-19.152-27.03-53.307-59.25-107.255-59.25-38.358 0-73.391 15.781-98.645 44.435C13.267 101.605 0 138.213 0 177.351c0 42.603 16.633 82.228 52.345 124.7 31.917 37.96 77.834 77.088 131.005 122.397l62.115 53.429.655.574c2.828 2.476 6.354 3.713 9.88 3.713a14.97 14.97 0 0 0 9.88-3.713l.655-.574 62.118-53.431c53.168-45.306 99.085-84.434 131.002-122.395C495.367 259.578 512 219.954 512 177.351c0-39.138-13.267-75.746-37.356-103.081zM309.193 401.614L256 447.26l-53.196-45.648C98.745 312.939 30 254.358 30 177.351c0-31.83 10.605-61.394 29.862-83.245C79.34 72.007 106.379 59.836 136 59.836c41.129 0 67.716 25.338 82.776 46.594 13.509 19.064 20.558 38.282 22.962 45.659a15 15 0 0 0 28.524 0c2.404-7.377 9.453-26.595 22.962-45.66 15.06-21.255 41.647-46.593 82.776-46.593 29.621 0 56.66 12.171 76.137 34.27C471.395 115.957 482 145.521 482 177.351c0 77.007-68.745 135.588-172.807 224.263z"
+                            />
+                          </svg>
+                          <span>35</span>
+                        </a>
+                      </div>
 
-            <!-- contact section -->
-            <div id="contact" class="content__section px-8 sm:px-12 md:px-36 xl:px-20 py-15">
-                <div class="mx__wd">
-                    <div class="badge inline-block py-2 px-4 mb-4 uppercase text-2xs font-semibold">
-                        Contact
+                      <h3 class="title">
+                        <a href="#news"
+                          >Format releases a new tool that enables direct video
+                          hosting</a
+                        >
+                      </h3>
+
+                      <div class="read-more-btn">
+                        <a href="#news">
+                          <span>Read More</span>
+                        </a>
+                      </div>
                     </div>
-    
-                    <h1 class="title text-3xl font-bold text-gray-800">Get In Touch</h1>
-    
-                    <span class="inline-block text-base mt-2">Indonesia, Bali - Denpasar</span>
-    
-                    <div class="map mt-10">
-                        <iframe class="w-full h-96" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1010294.3646550213!2d114.50963869516875!3d-8.454336480946282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd22f7520fca7d3%3A0x2872b62cc456cd84!2sBali!5e0!3m2!1sid!2sid!4v1624537902528!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="content">
+                      <div class="description">
+                        <span class="text-xl mt-6 leading-8 font-normal">
+                          Just because we can't get out and about like we
+                          normally would, doesn’t mean we have to stop taking
+                          pictures. There’s still plenty you can do, provided
+                          you're prepared to use some imagination. Here are a
+                          few ideas to keep you shooting until normal life
+                          resumes.
+                        </span>
+                        <p class="my-6">
+                          Most photographers love to shoot the unusual, and you
+                          don’t get much more unusual than These Unprecedented
+                          Times. Right now everything counts as out of the
+                          ordinary. There are a number of remarkable things
+                          about these lockdown days that are worth photographing
+                          now so we can remember them when it is all over.
+                        </p>
+                        <p class="mb-10">
+                          Streets empty that are usually busy are remarkable and
+                          can evoke the sense of historical pictures from before
+                          the invention of the motorcar. Other things that are
+                          different at the moment will be queues to get into
+                          stores and the lines marked out on the floor to show
+                          how far apart we should be.
+                        </p>
+
+                        <span class="quote">
+                          <h4 class="leading-8">
+                            Most photographers find it hard to see interesting
+                            pictures in places in which they are most familiar.
+                            A trip somewhere new seems always exactly what our
+                            photography needed, as shooting away from home
+                            consistently inspires us to new artistic heights.
+                          </h4>
+                        </span>
+
+                        <p class="mt-10 mb-6">
+                          Pretend everything is new and that you haven’t seen it
+                          before, and then you will be free to notice the
+                          leading lines, the places where one edge meets another
+                          in delightful geometric harmony, and how the ordinary
+                          things in the kitchen are transformed when the light
+                          is on or off.
+                        </p>
+
+                        <p>
+                          The trick here is to look slowly, and then look again.
+                          Take the time to look in detail and to look at the
+                          same thing from different angles, with different
+                          light, long lenses and wide lenses. Then move to the
+                          left a bit. You may never feel the need to leave the
+                          house again.
+                        </p>
+                      </div>
+
+                      <div class="flex mt-10 items-center">
+                        <span class="font-semibold mr-5 italic">Share :</span>
+                        <ul class="flex items-center">
+                          <li>
+                            <a
+                              class="w-10 h-10 flex items-center justify-center rounded-full border mr-2"
+                              href=""
+                            >
+                              <svg
+                                class="w-5 h-5"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                              >
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path
+                                  d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"
+                                />
+                              </svg>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="w-10 h-10 flex items-center justify-center rounded-full border mr-2"
+                              href=""
+                            >
+                              <svg
+                                class="w-5 h-5"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                              >
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path
+                                  d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"
+                                />
+                              </svg>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              class="w-10 h-10 flex items-center justify-center rounded-full border"
+                              href=""
+                            >
+                              <svg
+                                class="w-5 h-5"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                              >
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path
+                                  d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z"
+                                />
+                              </svg>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
-    
-                    <form class="form-message mt-15" action="" method="POST" autocomplete="off">
-                        <div class="mb-7">
-                            <input class="w-full border-gray-300 text-2sm focus:outline-none px-4 py-3 border" id="name" type="text" name="name" placeholder="Your Name">
-                        </div>
-                        <div class="mb-7">
-                            <input class="w-full border-gray-300 text-2sm focus:outline-none px-4 py-3 border" id="email" type="text" name="email" placeholder="example@email.com">
-                        </div>
-                        <div>
-                            <textarea class="w-full resize-none h-40 border-gray-300 text-2sm focus:outline-none px-4 py-3 border" id="message" type="text" placeholder="Your Message"></textarea>
-                        </div>
-                        
-                        <button type="submit" class="py-3 px-5 mt-7 focus:outline-none">
-                            Send Message
-                        </button>
-                    </form>
-                </div>
+                  </div>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
 
-        <!-- cursor -->
-        <span class="mouse-cursor cursor-outer"></span>
-        <span class="mouse-cursor cursor-inner"></span>
+        <!-- contact section -->
+        <div
+          id="contact"
+          class="content__section px-8 sm:px-12 md:px-36 xl:px-20 py-15"
+        >
+          <div class="mx__wd">
+            <div
+              class="badge inline-block py-2 px-4 mb-4 uppercase text-2xs font-semibold"
+            >
+              Contact
+            </div>
+
+            <h1 class="title text-3xl font-bold text-gray-800">Get In Touch</h1>
+
+            <span class="inline-block text-base mt-2"
+              >Indonesia, Bali - Denpasar</span
+            >
+
+            <div class="map mt-10">
+              <iframe
+                class="w-full h-96"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1010294.3646550213!2d114.50963869516875!3d-8.454336480946282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd22f7520fca7d3%3A0x2872b62cc456cd84!2sBali!5e0!3m2!1sid!2sid!4v1624537902528!5m2!1sid!2sid"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <form
+              class="form-message mt-15"
+              action=""
+              method="POST"
+              autocomplete="off"
+            >
+              <div class="mb-7">
+                <input
+                  class="w-full border-gray-300 text-2sm focus:outline-none px-4 py-3 border"
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="mb-7">
+                <input
+                  class="w-full border-gray-300 text-2sm focus:outline-none px-4 py-3 border"
+                  id="email"
+                  type="text"
+                  name="email"
+                  placeholder="example@email.com"
+                />
+              </div>
+              <div>
+                <textarea
+                  class="w-full resize-none h-40 border-gray-300 text-2sm focus:outline-none px-4 py-3 border"
+                  id="message"
+                  type="text"
+                  placeholder="Your Message"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="py-3 px-5 mt-7 focus:outline-none">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- cursor -->
+      <span class="mouse-cursor cursor-outer"></span>
+      <span class="mouse-cursor cursor-inner"></span>
     </div>
-    
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <script src="./vendor/swiper/swiper-bundle.min.js"></script>
     <script src="./vendor/isotope/isotope.js"></script>
     <script src="./js/app.js"></script>
-</body>
+  </body>
 </html>

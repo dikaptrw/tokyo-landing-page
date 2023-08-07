@@ -8,35 +8,35 @@
 /***/ (() => {
 
 // burger navigation mobile
-var leftSection = $('.all-wr .left-section');
-
+var leftSection = $(".all-wr .left-section");
 function toggleSidebar() {
-  $('#burger path:first-child, #burger path:nth-child(2)').toggleClass('block').toggleClass('hidden');
-
-  if ($('#burger path:first-child').hasClass('hidden')) {
-    leftSection.addClass('opened');
+  $("#burger path:first-child, #burger path:nth-child(2)").toggleClass("block").toggleClass("hidden");
+  if ($("#burger path:first-child").hasClass("hidden")) {
+    leftSection.addClass("opened");
   } else {
-    leftSection.removeClass('opened');
+    leftSection.removeClass("opened");
   }
 }
+$(document).on("click", "#burger", toggleSidebar);
 
-$(document).on('click', '#burger', toggleSidebar); // navigation menu onclick
-
-var linkArr = ['home', 'about', 'portfolio', 'news', 'contact'];
+// navigation menu onclick
+var linkArr = ["home", "about", "portfolio", "news", "contact"];
 linkArr.forEach(function (link) {
-  $(document).on('click', "a[href='#".concat(link, "'].nav__link"), function (e) {
+  $(document).on("click", "a[href='#".concat(link, "'].nav__link"), function (e) {
     // check sidebar is opened
-    if (leftSection.hasClass('opened')) {
+    if (leftSection.hasClass("opened")) {
       toggleSidebar();
-    } // reset link active and set current 
+    }
 
+    // reset link active and set current
+    $(".nav__link").removeClass("active");
+    $("a[href='#".concat(link, "'].nav__link")).addClass("active");
 
-    $('.nav__link').removeClass('active');
-    $("a[href='#".concat(link, "'].nav__link")).addClass('active'); // reset section active and set current 
+    // reset section active and set current
+    $(".content__section").removeClass("active");
+    $("#".concat(link, ".content__section")).addClass("active");
 
-    $('.content__section').removeClass('active');
-    $("#".concat(link, ".content__section")).addClass('active'); // scroll to top
-
+    // scroll to top
     if ($("#".concat(link, ".content__section")).scrollTop() != 0) {
       setTimeout(function () {
         $("#".concat(link, ".content__section")).animate({
@@ -45,43 +45,45 @@ linkArr.forEach(function (link) {
       }, 200);
     }
   });
-}); // route trigger change
+});
 
+// route trigger change
 function contentChange() {
   var link = location.hash;
-  var linkNotHash = location.hash.replace('#', '');
-
+  var linkNotHash = location.hash.replace("#", "");
   if ($.inArray(linkNotHash, linkArr) !== -1) {
     // check sidebar is opened
-    if (leftSection.hasClass('opened')) {
+    if (leftSection.hasClass("opened")) {
       toggleSidebar();
-    } // reset link active and set current 
+    }
 
+    // reset link active and set current
+    $(".nav__link").removeClass("active");
+    $("a[href='".concat(link, "'].nav__link")).addClass("active");
 
-    $('.nav__link').removeClass('active');
-    $("a[href='".concat(link, "'].nav__link")).addClass('active'); // reset section active and set current 
-
-    $('.content__section').removeClass('active');
-    $("".concat(link, ".content__section")).addClass('active');
+    // reset section active and set current
+    $(".content__section").removeClass("active");
+    $("".concat(link, ".content__section")).addClass("active");
   }
 }
+$(window).on("hashchange", contentChange);
+$(window).on("load", contentChange);
 
-$(window).on('hashchange', contentChange);
-$(window).on('load', contentChange); // about modal open and close
-
-$(document).on('click', '#about .description .learn-more', function () {
-  $('.modal__box.about').addClass('opened');
+// about modal open and close
+$(document).on("click", "#about .description .learn-more", function () {
+  $(".modal__box.about").addClass("opened");
   setTimeout(function () {
-    $('.modal__box.about .modal__box__inner .modal__content').animate({
+    $(".modal__box.about .modal__box__inner .modal__content").animate({
       scrollTop: 0
     }, "slow");
   }, 100);
 });
-$(document).on('click', '.modal__box.about .modal__box__inner .modal__close__btn', function () {
-  $('.modal__box.about').removeClass('opened');
-}); // about swiper partnerts
+$(document).on("click", ".modal__box.about .modal__box__inner .modal__close__btn", function () {
+  $(".modal__box.about").removeClass("opened");
+});
 
-new Swiper('.swiper-container', {
+// about swiper partners
+new Swiper(".swiper-container", {
   centeredSlides: true,
   spaceBetween: 20,
   loop: true,
@@ -104,194 +106,194 @@ new Swiper('.swiper-container', {
     delay: 4000,
     disableOnInteraction: false
   }
-}); // news modal open and close
+});
 
+// news modal open and close
 function modalNewsOpen(innerListEl) {
   // open modal
-  $('.modal__box.news').addClass('opened'); // get the contents
+  $(".modal__box.news").addClass("opened");
 
-  var content = $(innerListEl).html(); // replace to modal
+  // get the contents
+  var content = $(innerListEl).html();
 
-  $('.modal__box.news .modal__box__inner .modal__content').html(content);
-} // open
-
-
-$(document).on('click', '#news .list-inner .image-link', function () {
+  // replace to modal
+  $(".modal__box.news .modal__box__inner .modal__content").html(content);
+}
+// open
+$(document).on("click", "#news .list-inner .image-link", function () {
   modalNewsOpen($(this).parent());
 });
-$(document).on('click', '#news .list-inner .detail .read-more-btn a, #news .list-inner .detail .title a', function () {
+$(document).on("click", "#news .list-inner .detail .read-more-btn a, #news .list-inner .detail .title a", function () {
   modalNewsOpen($(this).parent().parent().parent());
-}); // close
-
-$(document).on('click', '.modal__box.news .modal__box__inner .modal__close__btn', function () {
-  $('.modal__box.news').removeClass('opened');
+});
+// close
+$(document).on("click", ".modal__box.news .modal__box__inner .modal__close__btn", function () {
+  $(".modal__box.news").removeClass("opened");
   setTimeout(function () {
-    $('.modal__box.news .modal__box__inner .modal__content').html('');
+    $(".modal__box.news .modal__box__inner .modal__content").html("");
   }, 500);
-}); // filter isotop
+});
 
-$(document).on('click', '#portfolio .menu li > a[data-filter]', function (e) {
+// filter isotop
+$(document).on("click", "#portfolio .menu li > a[data-filter]", function (e) {
   e.preventDefault();
-  var filter = $(this).data('filter');
-  $('#portfolio .list-wr.portfolio ul').isotope({
-    itemSelector: '.list-wr.portfolio ul li',
-    layoutMode: 'fitRows'
+  var filter = $(this).data("filter");
+  $("#portfolio .list-wr.portfolio ul").isotope({
+    itemSelector: ".list-wr.portfolio ul li",
+    layoutMode: "fitRows"
   });
-  $('#portfolio .menu li > a').removeClass('active');
-  $(this).addClass('active');
-  $('#portfolio .list-wr.portfolio ul').isotope({
+  $("#portfolio .menu li > a").removeClass("active");
+  $(this).addClass("active");
+  $("#portfolio .list-wr.portfolio ul").isotope({
     filter: "".concat(filter)
   });
-}); // portfolio onhover show title
+});
 
+// portfolio on hover show title
 $(".list-wr.portfolio ul > li .list-inner .image-wr").on({
   mouseenter: function mouseenter() {
-    var title = $(this).data('title');
-    var category = $(this).data('category');
+    var title = $(this).data("title");
+    var category = $(this).data("category");
     var html = "".concat(title, "<span>").concat(category, "</span>");
-    $('.portfolio-title').html(html);
-    $('.portfolio-title').addClass('visible');
+    $(".portfolio-title").html(html);
+    $(".portfolio-title").addClass("visible");
   },
   mouseleave: function mouseleave() {
-    $('.portfolio-title').removeClass('visible');
+    $(".portfolio-title").removeClass("visible");
   },
   mousemove: function mousemove(e) {
-    $('.portfolio-title').css({
+    $(".portfolio-title").css({
       left: e.pageX,
       top: e.pageY + 30
     });
   }
-}); // onclick portfolio list
+});
 
+// onclick portfolio list
 function getYtId(url) {
   var regExp = /^(?:https?:\/\/)?(?:i\.|www\.|img\.)?(?:youtu\.be\/|youtube\.com\/|ytimg\.com\/)(?:embed\/|v\/|vi\/|vi_webp\/|watch\?v=|watch\?.+&v=)((\w|-){11})(?:\S+)?$/;
   var match = url.match(regExp);
-
   if (match && match.length == 3) {
     return match[1];
   } else {
-    return 'error';
+    return "error";
   }
 }
-
 function getVimeoId(url) {
   var regEx = /https?:\/\/(?:vimeo\.com\/|player\.vimeo\.com\/)(?:video\/|(?:channels\/staffpicks\/|channels\/)|)((\w|-){7,9})/;
   var match = url.match(regEx);
-
   if (match && match.length == 3) {
     return match[1];
   } else {
-    return 'error';
+    return "error";
   }
 }
-
 function getSoundCloudId(url) {
   var regEx = /https?:\/\/(?:w\.|www\.|)(?:soundcloud\.com\/)(?:(?:player\/\?url=https\%3A\/\/api.soundcloud.com\/tracks\/)|)(((\w|-)[^A-z]{8})|([A-Za-z0-9]+(?:[-_][A-Za-z0-9]+)*(?!\/sets(?:\/|$))(?:\/[A-Za-z0-9]+(?:[-_][A-Za-z0-9]+)*){1,2}))/;
   var match = url.match(regEx);
-
   if (match && match.length == 5) {
     return match[1];
   } else {
-    return 'error';
+    return "error";
   }
-} // event
-
-
-$(document).on('click', '.list-wr.portfolio ul > li', function (e) {
+}
+// event
+$(document).on("click", ".list-wr.portfolio ul > li", function (e) {
   e.preventDefault();
-  var link = $(this).find('.list-inner .image-wr > a').attr('href');
-
-  if ($(this).hasClass('youtube')) {
+  var link = $(this).find(".list-inner .image-wr > a").attr("href");
+  if ($(this).hasClass("youtube")) {
     setContentYt(link);
-  } else if ($(this).hasClass('vimeo')) {
+  } else if ($(this).hasClass("vimeo")) {
     setContentVimeo(link);
-  } else if ($(this).hasClass('soundcloud')) {
+  } else if ($(this).hasClass("soundcloud")) {
     setContentSoundCloud(link);
-  } else if ($(this).hasClass('image')) {} // open modal content
+  } else if ($(this).hasClass("image")) {}
 
-
+  // open modal content
   function openModalContent(content) {
-    $('.modal__box__content .modal__box__inner .modal__content .iframe-scaler').html(content);
-    $('.modal__box__content').addClass('opened');
+    $(".modal__box__content .modal__box__inner .modal__content .iframe-scaler").html(content);
+    $(".modal__box__content").addClass("opened");
     return false;
-  } // youtube
+  }
 
-
+  // youtube
   function setContentYt(link) {
     var id = getYtId(link);
     var content = "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/".concat(id, "?autoplay=1\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>");
     openModalContent(content);
-  } // vimeo
+  }
 
-
+  // vimeo
   function setContentVimeo(link) {
     var id = getVimeoId(link);
     var content = "<iframe src=\"https://player.vimeo.com/video/".concat(id, "\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen=\"\"></iframe>");
     openModalContent(content);
-  } // vimeo
+  }
 
-
+  // vimeo
   function setContentSoundCloud(link) {
     var id = getSoundCloudId(link);
     var content = "<iframe scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/".concat(id, "&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true\"></iframe>");
     openModalContent(content);
   }
-}); // global window on click
+});
 
-$(window).on('click', function (e) {
+// global window on click
+$(window).on("click", function (e) {
   if (!window.getSelection().toString()) {
     // close modal content when fade clicked
-    if (e.target == $('.modal__box__content.opened .modal__box__inner')[0]) {
-      $('.modal__box__content.opened').removeClass('opened');
+    if (e.target == $(".modal__box__content.opened .modal__box__inner")[0]) {
+      $(".modal__box__content.opened").removeClass("opened");
       setTimeout(function () {
-        $('.modal__box__content .modal__box__inner .modal__content .iframe-scaler').html('');
+        $(".modal__box__content .modal__box__inner .modal__content .iframe-scaler").html("");
       }, 500);
     }
   }
 });
-$(document).on('click', '.modal__box__content .modal__box__inner .modal__content .modal__close__btn', function () {
-  $('.modal__box__content.opened').removeClass('opened');
+$(document).on("click", ".modal__box__content .modal__box__inner .modal__content .modal__close__btn", function () {
+  $(".modal__box__content.opened").removeClass("opened");
   setTimeout(function () {
-    $('.modal__box__content .modal__box__inner .modal__content .iframe-scaler').html('');
+    $(".modal__box__content .modal__box__inner .modal__content .iframe-scaler").html("");
   }, 500);
-}); // Open Lightbox
+});
 
-$(document).on('click', '.open-lightbox', function (e) {
+// Open Lightbox
+$(document).on("click", ".open-lightbox", function (e) {
   e.preventDefault();
-  var image = $(this).attr('href');
-  var desc = '';
-
-  if ($(this).data('description')) {
-    desc = $(this).data('description');
+  var image = $(this).attr("href");
+  var desc = "";
+  if ($(this).data("description")) {
+    desc = $(this).data("description");
   }
-
-  $('html').addClass('no-scroll');
-  $('body .all-wr').prepend("<div class=\"lightbox-wrapper\">\n        <div class=\"lightbox-content\">\n            <img src=\"".concat(image, "\">\n        </div>\n        <button class=\"lightbox-close-btn focus:outline-none\" title=\"Close\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 20 20\" fill=\"currentColor\">\n                <path fill-rule=\"evenodd\" d=\"M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z\" clip-rule=\"evenodd\" />\n            </svg>\n        </button>\n        <div class=\"lightbox-description\">\n            <span>").concat(desc, "</span>\n        </div>\n    </div>"));
+  $("html").addClass("no-scroll");
+  $("body .all-wr").prepend("<div class=\"lightbox-wrapper\">\n        <div class=\"lightbox-content\">\n            <img src=\"".concat(image, "\">\n        </div>\n        <button class=\"lightbox-close-btn focus:outline-none\" title=\"Close\">\n            <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 20 20\" fill=\"currentColor\">\n                <path fill-rule=\"evenodd\" d=\"M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z\" clip-rule=\"evenodd\" />\n            </svg>\n        </button>\n        <div class=\"lightbox-description\">\n            <span>").concat(desc, "</span>\n        </div>\n    </div>"));
   setTimeout(function () {
-    $('.lightbox-wrapper').addClass('opened');
+    $(".lightbox-wrapper").addClass("opened");
   }, 0);
-}); // Close Lightbox
+});
 
-$(window).on('click', function (e) {
+// Close Lightbox
+$(window).on("click", function (e) {
   if (!window.getSelection().toString()) {
-    if (e.target == $('.lightbox-wrapper')[0] || e.target == $('.lightbox-content')[0] || e.target == $('.lightbox-description')[0]) {
-      $('.lightbox-wrapper.opened').removeClass('opened');
+    if (e.target == $(".lightbox-wrapper")[0] || e.target == $(".lightbox-content")[0] || e.target == $(".lightbox-description")[0]) {
+      $(".lightbox-wrapper.opened").removeClass("opened");
       setTimeout(function () {
-        $('.lightbox-wrapper').remove();
+        $(".lightbox-wrapper").remove();
       }, 500);
     }
   }
 });
-$(document).on('click', '.lightbox-close-btn', function () {
-  $('.lightbox-wrapper').removeClass('opened');
+$(document).on("click", ".lightbox-close-btn", function () {
+  $(".lightbox-wrapper").removeClass("opened");
   setTimeout(function () {
-    $('.lightbox-wrapper').remove();
+    $(".lightbox-wrapper").remove();
   }, 500);
-}); // mouse cursor
+});
 
+// mouse cursor
 $(document).on({
   mousemove: function mousemove(e) {
-    $('.mouse-cursor').css({
+    $(".mouse-cursor").css({
       left: e.pageX,
       top: e.pageY
     });
@@ -299,63 +301,65 @@ $(document).on({
 });
 $(document).on({
   mouseenter: function mouseenter() {
-    $('.mouse-cursor').addClass('mouse-hover');
+    $(".mouse-cursor").addClass("mouse-hover");
   },
   mouseleave: function mouseleave() {
-    $('.mouse-cursor').removeClass('mouse-hover');
+    $(".mouse-cursor").removeClass("mouse-hover");
   }
 }, "body a, body button");
 $(document).on({
   click: function click() {
-    $('.mouse-cursor').removeClass('mouse-hover');
+    $(".mouse-cursor").removeClass("mouse-hover");
   }
-}, ".lightbox-wrapper .lightbox-close-btn"); // CLOSE ALL MODAL ON ESC
-// close comment unapp using escape
+}, ".lightbox-wrapper .lightbox-close-btn");
 
+// CLOSE ALL MODAL ON ESC
+// close comment unapp using escape
 $(document).keyup(function (e) {
   if (e.key === "Escape" || e.keyCode == 27) {
     // escape key maps to keycode `27`
-    if ($('.modal__box.opened').length > 0) {
-      $('.modal__box.about.opened').removeClass('opened');
-      $('.modal__box.news.opened').removeClass('opened');
+    if ($(".modal__box.opened").length > 0) {
+      $(".modal__box.about.opened").removeClass("opened");
+      $(".modal__box.news.opened").removeClass("opened");
       setTimeout(function () {
-        $('.modal__box.news .modal__box__inner .modal__content').html('');
+        $(".modal__box.news .modal__box__inner .modal__content").html("");
       }, 500);
     }
-
-    if ($('.modal__box__content').length > 0) {
-      $('.modal__box__content.opened').removeClass('opened');
+    if ($(".modal__box__content").length > 0) {
+      $(".modal__box__content.opened").removeClass("opened");
       setTimeout(function () {
-        $('.modal__box__content .modal__box__inner .modal__content .iframe-scaler').html('');
+        $(".modal__box__content .modal__box__inner .modal__content .iframe-scaler").html("");
       }, 500);
     }
-
-    if ($('.lightbox-wrapper.opened').length > 0) {
-      $('.lightbox-wrapper.opened').removeClass('opened');
+    if ($(".lightbox-wrapper.opened").length > 0) {
+      $(".lightbox-wrapper.opened").removeClass("opened");
       setTimeout(function () {
-        $('.lightbox-wrapper').remove();
+        $(".lightbox-wrapper").remove();
       }, 500);
     }
   }
-}); // settings toggle show
+});
 
-$(document).on('click', '.settings-wr .icon .settings-btn', function (e) {
+// settings toggle show
+$(document).on("click", ".settings-wr .icon .settings-btn", function (e) {
   e.preventDefault();
-  $('.settings-wr').toggleClass('opened');
-}); // settings color
+  $(".settings-wr").toggleClass("opened");
+});
 
-$(document).on('click', '.settings-wr .settings-content .colors li a', function (e) {
+// settings color
+$(document).on("click", ".settings-wr .settings-content .colors li a", function (e) {
   e.preventDefault();
-  $('.all-wr').data('color', this.className);
-  $('.all-wr').attr('data-color', this.className);
-}); // settings cursor
+  $(".all-wr").data("color", this.className);
+  $(".all-wr").attr("data-color", this.className);
+});
 
-$(document).on('click', '.settings-wr .settings-content .cursor li a', function (e) {
+// settings cursor
+$(document).on("click", ".settings-wr .settings-content .cursor li a", function (e) {
   e.preventDefault();
-  $('.settings-content .cursor li a.magic-cursor-btn, .settings-content .cursor li a.def-cursor-btn').toggleClass('active');
-  var toggleCursor = $('.all-wr').data('magic-cursor') == 'hide' ? 'show' : 'hide';
-  $('.all-wr').data('magic-cursor', toggleCursor);
-  $('.all-wr').attr('data-magic-cursor', toggleCursor);
+  $(".settings-content .cursor li a.magic-cursor-btn, .settings-content .cursor li a.def-cursor-btn").toggleClass("active");
+  var toggleCursor = $(".all-wr").data("magic-cursor") == "hide" ? "show" : "hide";
+  $(".all-wr").data("magic-cursor", toggleCursor);
+  $(".all-wr").attr("data-magic-cursor", toggleCursor);
 });
 
 /***/ }),
@@ -427,7 +431,8 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 				}
 /******/ 				if(fulfilled) {
 /******/ 					deferred.splice(i--, 1)
-/******/ 					result = fn();
+/******/ 					var r = fn();
+/******/ 					if (r !== undefined) result = r;
 /******/ 				}
 /******/ 			}
 /******/ 			return result;
@@ -480,19 +485,21 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 			// add "moreModules" to the modules object,
 /******/ 			// then flag all "chunkIds" as loaded and fire callback
 /******/ 			var moduleId, chunkId, i = 0;
-/******/ 			for(moduleId in moreModules) {
-/******/ 				if(__webpack_require__.o(moreModules, moduleId)) {
-/******/ 					__webpack_require__.m[moduleId] = moreModules[moduleId];
+/******/ 			if(chunkIds.some((id) => (installedChunks[id] !== 0))) {
+/******/ 				for(moduleId in moreModules) {
+/******/ 					if(__webpack_require__.o(moreModules, moduleId)) {
+/******/ 						__webpack_require__.m[moduleId] = moreModules[moduleId];
+/******/ 					}
 /******/ 				}
+/******/ 				if(runtime) var result = runtime(__webpack_require__);
 /******/ 			}
-/******/ 			if(runtime) var result = runtime(__webpack_require__);
 /******/ 			if(parentChunkLoadingFunction) parentChunkLoadingFunction(data);
 /******/ 			for(;i < chunkIds.length; i++) {
 /******/ 				chunkId = chunkIds[i];
 /******/ 				if(__webpack_require__.o(installedChunks, chunkId) && installedChunks[chunkId]) {
 /******/ 					installedChunks[chunkId][0]();
 /******/ 				}
-/******/ 				installedChunks[chunkIds[i]] = 0;
+/******/ 				installedChunks[chunkId] = 0;
 /******/ 			}
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}

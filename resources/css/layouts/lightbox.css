@@ -1,35 +1,97 @@
-
-
 .lightbox-wrapper {
-    position: fixed;
-    z-index: 200;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgb(0, 0, 0, 0.75);
-    cursor: zoom-out;
-    opacity: 0;
-    visibility: hidden;
-    transition: all .5s;
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(0, 0, 0, 0.75);
+  cursor: zoom-out;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
 }
 .lightbox-wrapper.opened {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 .lightbox-wrapper .lightbox-content {
+  position: absolute;
+  top: 70px;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 100%;
+}
+.lightbox-wrapper .lightbox-close-btn {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: all 0.5s;
+}
+
+.lightbox-wrapper .lightbox-close-btn:hover {
+  background-color: rgb(255, 255, 255, 0.2);
+}
+.lightbox-wrapper .lightbox-close-btn svg {
+  width: 20px;
+  pointer-events: none;
+  height: 20px;
+  color: #fff;
+}
+
+.lightbox-wrapper .lightbox-content img {
+  position: relative;
+  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: center;
+  margin: auto;
+  cursor: pointer;
+}
+
+.lightbox-wrapper .lightbox-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+  padding: 0px 20px;
+}
+.lightbox-wrapper .lightbox-description span {
+  cursor: text;
+}
+
+@screen lg {
+  .lightbox-wrapper .lightbox-content {
     position: absolute;
     top: 70px;
     bottom: 70px;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%;
-    max-width: 100%;
-}
-.lightbox-wrapper .lightbox-close-btn {
+    max-width: 850px;
+  }
+
+  .lightbox-wrapper .lightbox-close-btn {
     position: absolute;
-    right: 15px;
-    top: 15px;
+    right: 20px;
+    top: 20px;
     cursor: pointer;
     width: 40px;
     height: 40px;
@@ -38,31 +100,10 @@
     align-items: center;
     border-radius: 50%;
     background-color: transparent;
-    transition: all .5s;
-}
+    transition: all 0.5s;
+  }
 
-.lightbox-wrapper .lightbox-close-btn:hover {
-    background-color: rgb(255, 255, 255, 0.2);
-}
-.lightbox-wrapper .lightbox-close-btn svg {
-    width: 20px;
-    pointer-events: none;
-    height: 20px;
-    color: #fff;
-}
-
-.lightbox-wrapper .lightbox-content img {
-    position: relative;
-    height: 100%;
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
-    object-position: center;
-    margin: auto;
-    cursor: pointer;
-}
-
-.lightbox-wrapper .lightbox-description {
+  .lightbox-wrapper .lightbox-description {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -72,61 +113,18 @@
     justify-content: center;
     align-items: center;
     color: #fff;
-    font-size: 13px;
+    font-size: 14px;
     text-align: center;
-    padding: 0px 20px;
-}
-.lightbox-wrapper .lightbox-description span {
-    cursor: text;
-}
-
-@screen lg {
-    .lightbox-wrapper .lightbox-content {
-        position: absolute;
-        top: 70px;
-        bottom: 70px;
-        left: 50%;
-        transform: translateX(-50%);
-        max-width: 850px;
-    }
-
-    .lightbox-wrapper .lightbox-close-btn {
-        position: absolute;
-        right: 20px;
-        top: 20px;
-        cursor: pointer;
-        width: 40px;
-        height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        background-color: transparent;
-        transition: all .5s;
-    }
-
-    .lightbox-wrapper .lightbox-description {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 70px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #fff;
-        font-size: 14px;
-        text-align: center;
-    }
+  }
 }
 
 @screen xl {
-    .lightbox-wrapper .lightbox-content {
-        position: absolute;
-        top: 70px;
-        bottom: 70px;
-        left: 50%;
-        transform: translateX(-50%);
-        max-width: 900px;
-    }
+  .lightbox-wrapper .lightbox-content {
+    position: absolute;
+    top: 70px;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 900px;
+  }
 }

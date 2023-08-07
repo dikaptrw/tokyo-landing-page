@@ -1,29 +1,31 @@
-
 .right-section #contact .badge {
-    background-color: var(--color-mode-light);
+  background-color: var(--color-mode-light);
 }
 
 .right-section #contact .map {
-    -webkit-filter: grayscale(40%);
-    -moz-filter: grayscale(40%);
-    -ms-filter: grayscale(40%);
-    -o-filter: grayscale(40%);
-    filter: grayscale(40%);
+  -webkit-filter: grayscale(40%);
+  -moz-filter: grayscale(40%);
+  -ms-filter: grayscale(40%);
+  -o-filter: grayscale(40%);
+  filter: grayscale(40%);
 }
 
 .right-section #contact .form-message button[type="submit"] {
-    background-color: var(--color-mode);
-    color: #fff;
-    transition: letter-spacing .5s;
+  background-color: var(--color-mode);
+  color: #fff;
+  transition: letter-spacing 0.5s;
 }
 .right-section #contact .form-message button[type="submit"]:hover {
-    letter-spacing: 2px;
+  letter-spacing: 2px;
 }
 
 .right-section #contact .form-message input:focus,
 .right-section #contact .form-message textarea:focus {
-    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--color-mode-light);
-    box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-    border-color: var(--color-mode);
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0
+    var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
+    calc(3px + var(--tw-ring-offset-width)) var(--color-mode-light);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+    var(--tw-shadow, 0 0 #0000);
+  border-color: var(--color-mode);
 }
