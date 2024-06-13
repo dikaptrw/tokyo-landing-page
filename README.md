@@ -47,3 +47,7 @@ Make sure you have the following installed:
 Feel free to use this landing page for your projects. Customize it to fit your brand and content.
 
 If you like this project, please give it a star on GitHub! ⭐ Your support is much appreciated and helps to keep this project alive.
+
+# 💬 Contact
+
+For any inquiries or feedback, please open an issue on GitHub or contact me at dikaptrw@gmail.com.
