@@ -12,7 +12,7 @@ Welcome to the **Tokyo Landing Page**! This project is a sleek, modern landing p
 
 ## 🎨 Live Demo
 
-Check out the live demo [here](#) to see it in action!
+Check out the live demo [here](https://tokyo-landpage.netlify.app/) to see it in action!
 
 ## 📚 Getting Started
 
